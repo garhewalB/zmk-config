@@ -1,0 +1,15 @@
+file_format: "1"
+id: hookah
+name: Hookah
+type: shield
+url: https://github.com/warfareonly/totem/
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+  - display
+siblings:
+  - hookah_central_dongle
+  - hookah_central_left
+  - hookah_peripheral_left
+  - hookah_peripheral_right
