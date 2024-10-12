@@ -14,7 +14,7 @@
     };
 };
 
-/delete-node/ &default_kscan;   // only required if the dongle uses a 
+/delete-node/ &kscan0;   // only required if the dongle uses a 
                                 // different board than the peripherals
                                 // Since we do that, we have to delete the node.
 
