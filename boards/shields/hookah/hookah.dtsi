@@ -10,7 +10,7 @@
     chosen {
         zmk,kscan = &default_kscan;
         zmk,matrix-transform = &default_transform;
-        zmk,physical-layout = &6col_layout;
+        zmk,physical-layout = &hookah_6col_layout;
     };
 
     
@@ -60,14 +60,14 @@ RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10
     };
     
 
-    6col_layout: 6col_layout {
+    hookah_6col_layout: hookah_6col_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         transform = <&default_transform>;
         kscan = <&kscan0>;
     };
     
-    5col_layout: 5col_layout {
+    hookah_5col_layout: hookah_5col_layout {
         compatible = "zmk,physical-layout";
         display-name = "Alternate Layout";
         transform = <&five_column_transform>;
