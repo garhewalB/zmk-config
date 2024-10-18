@@ -33,13 +33,6 @@
   #include <behaviors/mouse_keys.dtsi>
 #endif  // HAS_MOUSE_KEYS
 
-#ifdef HAS_MOUSE_TP
-  // We store the trackpoint settings in a separate file
-  // to make organization a little easier.
-  #include "include/mouse_tp.dtsi"
-#endif  // HAS_MOUSE_TP
-
-
 // Adjust layer keys based on enabled features.
 //
 // This prevents build errors when we build the firmware
