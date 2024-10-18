@@ -19,8 +19,6 @@
 ---
 include:
   - board: nice_nano
-    shield: hookah_central_left
-  - board: nice_nano
     shield: hookah_peripheral_left
   - board: nice_nano
     shield: hookah_peripheral_right
