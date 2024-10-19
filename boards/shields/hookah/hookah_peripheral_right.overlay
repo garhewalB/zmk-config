@@ -15,10 +15,6 @@
     col-offset = <6>;
 };
 
-&five_column_transform {
-    col-offset = <5>;
-};
-
 &right_encoder {
     status = "okay";
 };
