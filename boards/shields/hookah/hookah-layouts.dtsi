@@ -1,7 +1,7 @@
 #include <physical_layouts.dtsi>
 
 /{
-    hookah_layout : hookah_layout {
+    hookah_layout: hookah_layout {
         compatible = "zmk,physical-layout";
         display-name = "Hookah WL";
         keys  //                     w   h    x    y     rot    rx    ry
@@ -52,7 +52,7 @@
             ;
     };
     
-    hookah_layout_position_map : hookah_layout_position_map {
+    hookah_layout_position_map: hookah_layout_position_map {
         compatible = "zmk,physical-layout-position-map";
         complete; 
         physical-layout = <&hookah_layout>;
