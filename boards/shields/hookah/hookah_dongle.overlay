@@ -3,10 +3,11 @@
 / {
     chosen {
         zmk,kscan = &mock_kscan;
+        zmk,physical-layout = &hookah_layout;
         zephyr,display = &oled;
     };
 
-    mock_kscan: kscan_1 {
+    mock_kscan: mock_kscan0 {
         compatible = "zmk,kscan-mock";
         columns = <0>;
         rows = <0>;
@@ -14,8 +15,8 @@
     };
 };
 
-/delete-node/ &kscan0;   // only required if the dongle uses a 
-                                // different board than the peripherals
+// /delete-node/ &kscan0;   // only required if the dongle uses a 
+//                                // different board than the peripherals
                                 // Since we do that, we have to delete the node.
 
 &pro_micro_i2c {
