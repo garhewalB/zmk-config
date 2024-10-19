@@ -8,7 +8,7 @@
 
 / {
     chosen {
-        zmk,matrix-transform = &default_transform;
+        // zmk,matrix-transform = &default_transform;
         zmk,physical-layout = &hookah_6col_layout;
     };
 
