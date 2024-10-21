@@ -61,10 +61,10 @@
     Base_layer {
       display-name = "Base";
       bindings = <
-&kp TAB    &kp Q      &kp W      &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC
-&kp LCTRL  &kp A      &kp S      &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X      &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp ESC
-&kp X      &mo LOWER  &kp SPACE  U_THUMB_INNER  U_THUMB_INNER  &kp RET  &mo LOWER  &kp X
+&none  &kp none        &kp W      &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC
+&kp Q  &lh_pht LGUI A  &lh_pht LALT R  &lh_pht LCTRL S &lh_pht LSHFT T      &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp SQT
+&none  &kp Z           &kp X      &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp ESC
+&kp X  &mo LOWER  &kp SPACE  U_THUMB_INNER      U_THUMB_INNER  &kp RET  &mo LOWER  &kp X
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 
@@ -81,7 +81,7 @@
 // ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤
      &trans       &kp EQUAL    &kp MINUS    &kp PLUS     &kp LEFT_BRACE           &kp RIGHT_BRACE   &kp LEFT_BRACKET         &kp RIGHT_BRACKET        &kp SEMICOLON            &kp COLON    &kp BACKSLASH             &trans
 // ╰────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────┼────────────────────────┼────────────────────────┤    ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┴────────────────────────┼────────────────────────╯
-                &kp X                &trans       &kp UNDERSCORE           &kp TILDE         &trans        &trans      &trans   &kp X
+                &kp X                &kp X       &kp UNDERSCORE           &kp TILDE         &trans        &trans      &trans   &kp X
 //                ╰────────────────────────┴────────────────────────┴────────────────────────╯    ╰────────────────────────┴────────────────────────┴────────────────────────╯
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
