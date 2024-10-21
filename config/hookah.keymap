@@ -26,12 +26,14 @@
  * to edit the entire keymap file manually every time.
  */
 
+#define HAS_MOUSE_KEYS
+#define HAS_MOUSE_TP
+
+
 #ifdef HAS_MOUSE_TP
   #include "includes/mouse_tp.dtsi"
 #endif
 
-#define HAS_MOUSE_KEYS
-#define HAS_MOUSE_TP
 
 #ifdef HAS_MOUSE_KEYS
   #include <dt-bindings/zmk/mouse.h>
