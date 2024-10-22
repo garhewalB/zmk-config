@@ -8,6 +8,13 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
+if SHIELD_HOOKAH_DONGLE 
+
+config ZMK_USB
+    default y
+
+endif
+
 if ZMK_DISPLAY
 
 config I2C
