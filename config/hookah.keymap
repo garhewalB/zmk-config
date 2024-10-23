@@ -61,6 +61,22 @@
 // Disable line-wrap in your editor to see a "visualization" of the key layouts
 / {
 
+      
+	/* assign `input-listener` to all pointing devices */
+	/* &pd0 on peripheral, &vtpoint0 on central */
+
+        trackball_peripheral_listener {
+                compatible = "zmk,input-listener";
+                device = <&pd0>;
+	};
+
+        trackball_central_listener {
+                compatible = "zmk,input-listener";
+                device = <&vtpoint0>;
+	};
+        
+
+
   keymap {
     compatible = "zmk,keymap";
 
