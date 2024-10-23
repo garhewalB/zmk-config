@@ -1,4 +1,5 @@
 #include "hookah.dtsi"
+#include "hookah_tpoint0_ps2.dtsi"
 
 &kscan0 {
     col-gpios
@@ -19,10 +20,9 @@
     status = "okay";
 };
 
-#include "hookah_tpoint0_ps2.dtsi"
 
 /{
-    pd0: virtual_input_0 {
+    vtpoint: virtual_input_tp {
             compatible = "zmk,virtual-input";
     };
     input_relay_config_105 {
