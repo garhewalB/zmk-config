@@ -2,7 +2,7 @@
 
 / {
     chosen {
-        # zmk,kscan = &mock_kscan;
+        // zmk,kscan = &mock_kscan;
         zmk,physical-layout = &hookah_layout;
         zephyr,display = &oled;
     };
