@@ -68,7 +68,7 @@
      trackball_peripheral_listener {
           compatible = "zmk,input-listener";
           // device = <&pd0>;
-          device = <&vtpoint0>;
+          device = <&vtpoint>;
 	};
 
      // trackball_central_listener {

@@ -14,3 +14,9 @@
 &left_encoder {
     status = "okay";
 };
+
+/{
+    vtpoint: virtual_input_tp {
+            compatible = "zmk,virtual-input";
+    };
+};

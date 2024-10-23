@@ -16,12 +16,12 @@
 };
 
 /{
-    vtpoint0: virtual_input_tp {
-		compatible = "zmk,virtual-input";
-	};
+    vtpoint: virtual_input_tp {
+            compatible = "zmk,virtual-input";
+    };
     input_relay_config_105 {
 		compatible = "zmk,split-peripheral-input-relay";
 		relay-channel = <105>;
-		device = <&vtpoint0>;
+		device = <&vtpoint>;
 	};
 };
