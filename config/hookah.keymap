@@ -20,14 +20,14 @@
 #include <dt-bindings/zmk/input_transform.h>
 
 #define DEF 0
-#define NUM 4
-#define SYM 7
-#define NAV 8
-#define TSP 1
-#define GME 2
-#define LHB 3
-#define MSK 5
-#define MSC 6
+#define NUM 1
+#define SYM 2
+#define NAV 3
+#define TSP 4
+#define GME 5
+#define LHB 6
+#define MSK 7
+#define MSC 8
 
 #ifndef MOVE_Y
 #define MOVE_Y(n) (0)
@@ -154,17 +154,12 @@
         keymap {
                 compatible = "zmk,keymap";
                 DEF_layer {
-// +------------------------------------------------------+     +--------------------------------------------------------+
-// |     Q    |  LCTRL:W |  _MSK:E  |  LALT:R  |     T    |     |     Y     |  RALT:U  |  _MSK:I   |  RCTRL:O |     P    |
-// |     A    |  _NUM:S  |  _NUM:D  |  _TSP:F  |     G    |     |     H     |  _TSP:J  |  _NUM:K   |  _NUM:L  |     ;:   |
-// |  SHFT Z  |  LGUI:X  |  LGUI:C  |  LGUI:V  |     B    |     |     N     |  RGUI:M  |  RGUI:,<  |  RGUI:.> |  SHFT /? |
-//                       | ^MSK:ESC |  GUI:ESC | CTRL:TAB |     |  ALT:ENT  | _NUM:SPC | ^MSK:BKSP |
                         display-name = "Default";
                         bindings = <
 &none &none        &kp W        &kp F         &kp P         &kp B               &kp J &kp L         &kp U         &kp Y        &none        &none 
 &kp Q &hm_l LGUI A &hm_l LALT R &hm_l LCTRL S &hm_l LSHFT T &kp G               &kp M &hm_r RSHFT N &hm_r LCTRL E &hm_r LALT I &hm_r RGUI O &kp SQT 
 &none &kp Z        &kp X        &kp C         &kp D         &kp V               &kp K &kp H         &kp COMMA     &kp DOT      &kp FSLH     &none 
-                   &none &none &lt NAV SPACE &lt MSK TAB         &lt SYM RET &lt NUM BKSP  &none &none
+                   &none &none &lt NAV  SPACE &lt MSK TAB         &lt SYM RET &lt NUM BKSP  &none &none
    // &mkp RCLK   &hmkp_tg MCLK MSC   &mkp LCLK
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
