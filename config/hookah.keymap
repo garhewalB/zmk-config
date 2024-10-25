@@ -20,10 +20,12 @@
 #include <dt-bindings/zmk/input_transform.h>
 
 #define DEF 0
+#define NUM 4
+#define SYM 7
+#define NAV 8
 #define TSP 1
 #define GME 2
 #define LHB 3
-#define NUM 4
 #define MSK 5
 #define MSC 6
 
@@ -159,11 +161,49 @@
 //                       | ^MSK:ESC |  GUI:ESC | CTRL:TAB |     |  ALT:ENT  | _NUM:SPC | ^MSK:BKSP |
                         display-name = "Default";
                         bindings = <
-&none   &kp Q          &hm_l LCTRL W   &hl_l MSK E    &hm_l LALT R    &kp T               &kp Y           &hm_r RALT U     &hl_r MSK I       &hm_r RCTRL O   &kp P &none
-&kp Q   &kp A          &hl_l NUM S     &hl_l NUM D    &hl_l TSP F     &kp G               &kp H           &hl_r TSP J      &hl_r NUM K       &hl_r NUM L     &kp SEMI &kp P
-&none   &mt LSHFT Z    &hm_l LGUI X    &hm_l LGUI C   &hm_l LGUI V    &kp B               &kp N           &hm_r RGUI M     &hm_r RGUI COMMA  &hm_r RGUI DOT  &mt RSHFT FSLH &none
-                    &none    &lt MSK ESC    &mt LGUI ESC    &mt LCTRL TAB       &mt LALT RET    &lt NUM SPACE    &lt MSK BKSP &none
+&none &none        &kp W        &kp F         &kp P         &kp B               &kp J &kp L         &kp U         &kp Y        &none        &none 
+&kp Q &hm_l LGUI A &hm_l LALT R &hm_l LCTRL S &hm_l LSHFT T &kp G               &kp M &hm_r RSHFT N &hm_r LCTRL E &hm_r LALT I &hm_r RGUI O &kp SQT 
+&none &kp Z        &kp X        &kp C         &kp D         &kp V               &kp K &kp H         &kp COMMA     &kp DOT      &kp FSLH     &none 
+                   &none &none &lt NAV SPACE &lt MSK TAB         &lt SYM RET &lt NUM BKSP  &none &none
    // &mkp RCLK   &hmkp_tg MCLK MSC   &mkp LCLK
+                        >;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                };
+                NUM_layer {
+                        display-name = "Num";
+                        bindings = <
+&none    &none             &kp N7            &kp N8            &kp N9            &kp RBKT          &none &trans &trans &trans &trans &trans   
+&kp LBKT &kp SEMI          &kp N4            &kp N5            &kp N6            &kp EQUAL         &none &trans &trans &trans &trans &trans   
+&none    &kp GRAVE         &kp N1            &kp N2            &kp N3            &kp BSLH          &none &trans &trans &trans &trans &trans   
+                            &none            &trans            &kp N0            &kp MINUS         &none &trans &trans &trans 
+   // &trans   &trans   &trans
+                        >;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                };
+                SYM_layer {
+                        display-name = "Sym";
+                        bindings = <
+&none    &none             &kp AMPS            &kp ASTRK            &kp LPAR            &kp RBRC          &none &trans &trans &trans &trans &trans   
+&kp LBRC &kp COLON          &kp DLLR            &kp PRCNT            &kp CARET            &kp PLUS         &none &trans &trans &trans &trans &trans   
+&none    &kp TILDE         &kp EXCL            &kp AT            &kp HASH            &kp PIPE          &none &trans &trans &trans &trans &trans   
+                            &none            &trans            &kp RPAR            &kp UNDER         &none &trans &trans &trans 
+   // &trans   &trans   &trans
+                        >;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                };
+                NAV_layer {
+                       display-name = "Nav";
+                        bindings = <
+U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         U_NA,              &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         &u_caps_word,      \
+U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,              &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,           &kp INS,           \
+U_NP,              U_NP,              U_NA,              U_NA,              U_NA,              &kp RET,           &kp BSPC,          &kp DEL,           U_NP,              U_NP
+
+&none &trans &trans &trans &trans &trans  &none    &trans    &trans    &trans    &trans &none       
+&none &trans &trans &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp CAPSLOCK &none
+&none &trans &trans &trans &trans &trans  &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp INS &none
+              &none &trans &trans &trans  &none &none &none &none
+   // &trans   &trans   &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
@@ -202,22 +242,6 @@
 &none   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans &none
  &none                  &trans  &trans  &trans    &trans  &trans  &trans &none
    // &mkp LCLK   &hmkp_tg MCLK MSC   &mkp RCLK
-                        >;
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-                };
-                NUM_layer {
-// +------------------------------------------------------+     +-------------------------------------------------------+
-// |    1!    | LCTRL:2@  |    3#    | LALT:4$  |    5%   |     |    6^    |  RALT:7& |    8&    |  RCTRL 9( |    0)    |
-// |    `~    |           |    {[    |    ]}    |   TAB   |     |    LFT   |   DWN    |    UP    |    RGT    |    '"    |
-// | SHFT TAB |           |          |          |   RET   |     |          |    -_    |    =+    |           |  SHFT \| |
-//                        |          |          |         |     |          |    (H)   |          |
-                        display-name = "Num";
-                        bindings = <
-&none   &kp N1             &hm_l LCTRL N2   &kp N3     &hm_l LALT N4   &kp N5              &kp N6      &hm_r RALT N7   &kp N8      &hm_r RCTRL N9   &kp N0 &none
-&kp N1  &kp GRAVE          &trans           &kp LBKT   &kp RBKT        &kp TAB             &kp LEFT    &kp DOWN        &kp UP      &kp RIGHT        &kp SQT &kp N0
-&none   &mt LSHFT TAB      &trans           &trans     &trans          &kp RET             &trans      &kp MINUS       &kp EQUAL   &trans           &mt RSHFT BSLH &none
-                              &none &trans     &trans          &trans              &trans      &trans          &trans &none
-   // &trans   &trans   &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
