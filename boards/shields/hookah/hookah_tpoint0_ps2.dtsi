@@ -4,10 +4,13 @@
  * SPDX-License-Identifier: MIT
  */
 
+// #define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 16 GPIO_ACTIVE_HIGH>
+// #define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 10 GPIO_ACTIVE_HIGH>
+// #define MOUSE_PS2_PIN_RST_PRO_MICRO <&pro_micro 9 GPIO_ACTIVE_HIGH>
+// #define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 9)>
 #define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 1 GPIO_ACTIVE_HIGH>
 #define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 0 GPIO_ACTIVE_HIGH>
-// #define MOUSE_PS2_PIN_RST_PRO_MICRO <&pro_micro 8 GPIO_ACTIVE_HIGH>
-// #define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 8)>
+// We use an RC circuit for the Power-On-Reset functionality.
 // #define MOUSE_PS2_PIN_RST_PRO_MICRO <&gpio1 11 GPIO_ACTIVE_HIGH>
 #define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 8)>
 
