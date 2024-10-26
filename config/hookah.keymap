@@ -25,9 +25,8 @@
 #define NAV 3
 #define TSP 4
 #define GME 5
-#define LHB 6
-#define MSK 7
-#define MSC 8
+#define MSK 6
+#define MSC 7
 
 #ifndef MOVE_Y
 #define MOVE_Y(n) (0)
@@ -221,17 +220,6 @@
 &none   &mt LSHFT Z    &kp X           &kp C          &kp V           &kp B               &kp N           &kp M            &kp COMMA       &kp DOT &mt RSHFT FSLH &none
                          &none     &lt MSK ESC    &mt LGUI ESC    &mt LCTRL TAB       &mt LALT RET    &lt NUM SPACE    &lt MSK BKSP &none
    // &mkp RCLK   &hmkp_tg MCLK MSC   &mkp LCLK
-                        >;
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-                };
-                LHB_layer {
-                        display-name = "MKP Swap";
-                        bindings = <
-&none   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans &none
-&none   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans &none
-&none   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans &none
- &none                  &trans  &trans  &trans    &trans  &trans  &trans &none
-   // &mkp LCLK   &hmkp_tg MCLK MSC   &mkp RCLK
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
