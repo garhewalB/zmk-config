@@ -77,7 +77,7 @@
                     , <INPUT_REL_Y INPUT_REL_WHEEL>;
         };
         
-        temp_layer : temp_layer{
+        temp_layer: temp_layer{
                compatible = "zmk,input-processor-temp-layer";
                #input-processor-cells = <2>;
         };
