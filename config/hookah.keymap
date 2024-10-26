@@ -10,7 +10,6 @@
 #include <behaviors/studio_unlock.dtsi>
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors/mouse_key_press.dtsi>
-// #include <app/dts/input/processors/processors.dtsi>
 // #include <behaviors/mouse_key_toggle.dtsi> <- Cannot be found in source tree.
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -19,6 +18,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
 
 #define DEF 0
 #define NUM 1
