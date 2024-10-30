@@ -24,10 +24,8 @@
 #define NUM 1
 #define SYM 2
 #define NAV 3
-#define TSP 4
-#define GME 5
-#define MSK 6
-#define MSC 7
+#define MSK 4
+#define MSC 5
 
 #ifndef MOVE_Y
 #define MOVE_Y(n) (0)
@@ -165,7 +163,6 @@
 &kp Q &hm_l LGUI A &hm_l LALT R &hm_l LCTRL S &hm_l LSHFT T &kp G               &kp M &hm_r RSHFT N &hm_r LCTRL E &hm_r LALT I &hm_r RGUI O &kp SQT 
 &none &kp Z        &kp X        &kp C         &kp D         &kp V               &kp K &kp H         &kp COMMA     &kp DOT      &kp FSLH     &none 
                    &none &none &lt NAV  SPACE &lt MSK TAB         &lt SYM RET &lt NUM BKSP  &none &none
-   // &mkp RCLK   &hmkp_tg MCLK MSC   &mkp LCLK
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
@@ -176,7 +173,6 @@
 &kp LBKT &kp SEMI          &kp N4            &kp N5            &kp N6            &kp EQUAL         &none &trans &trans &trans &kp ESC &trans   
 &none    &kp GRAVE         &kp N1            &kp N2            &kp N3            &kp BSLH          &none &trans &trans &trans &trans &trans   
                             &none            &trans            &kp N0            &kp MINUS         &none &trans &trans &trans 
-   // &trans   &trans   &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
@@ -187,7 +183,6 @@
 &kp LBRC &kp COLON          &kp DLLR            &kp PRCNT            &kp CARET            &kp PLUS         &none &trans &trans &trans &trans &trans   
 &none    &kp TILDE         &kp EXCL            &kp AT            &kp HASH            &kp PIPE          &none &trans &trans &trans &trans &trans   
                             &none            &trans            &kp RPAR            &kp UNDER         &none &trans &trans &trans 
-   // &trans   &trans   &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
@@ -198,34 +193,6 @@
 &none &trans &trans &trans &trans &trans  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp CAPSLOCK &none
 &none &trans &trans &trans &trans &trans  &kp HOME &kp PG_DN &kp PG_UP &kp END   &kp INS &none
               &none &trans &trans &trans  &none &none &none &none
-   // &trans   &trans   &trans
-                        >;
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-                };
-                TSP_layer {
-                        display-name = "Thumb Swap";
-                        bindings = <
-&none   &kp N0  &kp N9  &kp N8         &trans          &trans          &trans          &trans         &kp N3  &kp N2  &kp N1 &none
-&kp N0   &trans  &kp N7  &kp N6         &trans          &trans          &trans          &trans         &kp N4  &kp N5  &trans &kp N2
-&none   &trans  &trans  &trans         &trans          &trans          &trans          &trans         &trans  &trans  &trans &none
-               &none &lt MSK BKSP   &lt NUM SPACE   &mt LALT RET    &mt LCTRL TAB   &mt LGUI ESC   &lt MSK ESC &none
-  // &trans   &trans   &trans
-                        >;
-                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-                };
-                GME_layer {
-// +------------------------------------------------------+     +--------------------------------------------------------+
-// |     Q    |     W    |     E    |     R    |     T    |     |     Y     |     U    |     I     |     O    |     P    |
-// |     A    |     S    |     D    |     F    |     G    |     |     H     |     J    |     K     |     L    |     ;:   |
-// |  SHFT Z  |     X    |     C    |     V    |     B    |     |     N     |     M    |    ,<     |    .>    |  SHFT /? |
-//                       | ^MSK:ESC |  GUI:ESC | CTRL:TAB |     |  ALT:ENT  | _NUM:SPC | ^MSK:BKSP |
-                        display-name = "Gaming";
-                        bindings = <
-&none   &kp Q          &kp W         &kp E          &kp R           &kp T               &kp Y           &kp U            &kp I           &kp O   &kp P &none
-&none   &kp A        &kp S         &kp D        &kp F           &kp G               &kp H           &kp J            &kp K           &kp L   &kp SEMI &none
-&none   &mt LSHFT Z    &kp X           &kp C          &kp V           &kp B               &kp N           &kp M            &kp COMMA       &kp DOT &mt RSHFT FSLH &none
-                         &none     &lt MSK ESC    &mt LGUI ESC    &mt LCTRL TAB       &mt LALT RET    &lt NUM SPACE    &lt MSK BKSP &none
-   // &mkp RCLK   &hmkp_tg MCLK MSC   &mkp LCLK
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
@@ -241,7 +208,6 @@
 &kp F1  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_BRI_DN  &kp C_BRI_UP  &kp F12           &m_v MOU_L  &m_v MOU_D  &m_v MOU_U  &m_v MOU_R  &kp F11 &kp F10
 &none   &mo MSC       &mkp RCLK     &mkp MCLK     &mkp LCLK     &trans            &trans      &mkp LCLK   &mkp MCLK   &mkp RCLK   &mo MSC &none
                          &none &trans        &trans        &trans            &trans      &trans      &trans &none
-   //&trans   &trans   &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
@@ -257,7 +223,6 @@
 &none  &sys_reset  &none         &none         &none         &studio_unlock    &m_v MOU_L   &m_v MOU_D    &m_v MOU_U  &m_v MOU_R    &sys_reset &bootloader
 &none   &trans      &mkp RCLK     &mkp MCLK     &mkp LCLK     &trans            &trans       &mkp LCLK     &mkp MCLK   &mkp RCLK     &trans &none
                          &none &trans        &trans        &trans            &trans       &trans        &trans &none
-   // &trans   &trans   &trans
                         >;
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
                 };
