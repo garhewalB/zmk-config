@@ -14,3 +14,8 @@
 &left_encoder {
     status = "okay";
 };
+
+
+&tpoint_listener {
+    status = "disabled";
+};
