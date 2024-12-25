@@ -19,9 +19,6 @@ manifest:
     - name: zmk-dongle-display
       remote: englmaxi
       revision: main
-    # - name: zmk-split-peripheral-input-relay
-      # remote: badjeff
-      # revision: main
     - name: kb_zmk_ps2_mouse_trackpoint_driver
       remote: badjeff
       revision: main
