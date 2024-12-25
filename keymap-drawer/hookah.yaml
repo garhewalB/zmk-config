@@ -1,4 +1,3 @@
-layout: {dts_layout: boards/shields/hookah/hookah-layouts.dtsi, layout_name: hookah_layout}
 layers:
   Default:
   - ''
