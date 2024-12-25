@@ -20,19 +20,6 @@
     status = "okay";
 };
 
-
-/{
-    pd0: virtual_input_0 {
-		compatible = "zmk,virtual-input";
-	};
-	pd1: virtual_input_1 {
-		compatible = "zmk,virtual-input";
-	};
-    input_relay_config_105 {
-		compatible = "zmk,split-peripheral-input-relay";
-		relay-channel = <105>;
-		device = <&tpoint0>;
-	};
-};
+&tpoint_split { device = <&tpoint0>; };
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>

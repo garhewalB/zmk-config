@@ -14,18 +14,3 @@
 &left_encoder {
     status = "okay";
 };
-
-
-
-/{
-    pd0: virtual_input_0 {
-		compatible = "zmk,virtual-input";
-	};
-	pd1: virtual_input_1 {
-		compatible = "zmk,virtual-input";
-	};
-    tpoint0: virtual_input_tp {
-		compatible = "zmk,virtual-input";
-	};
-    // There's no relay here, so nothing will be communicating.
-};
