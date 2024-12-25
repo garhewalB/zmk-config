@@ -16,6 +16,6 @@
 };
 
 
-&tpoint_listener {
+&tpoint_split {
     status = "disabled";
 };
