@@ -1,0 +1,15 @@
+file_format: "1"
+id: colubris
+name: Colubris
+type: shield
+url: https://github.com/warfareonly/colubris/
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+  - display
+siblings:
+  - colubris_central_dongle
+  - colubris_central_left
+  - colubris_peripheral_left
+  - colubris_peripheral_right
