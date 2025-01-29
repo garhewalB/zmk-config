@@ -90,12 +90,10 @@
             input-processors = <&xy_transf (INPUT_TRANSFORM_X_INVERT)>, <&temp_layer MSE 500>;
             precise {
                     layers = <NAV>;
-                    inherit;
                     input-processors = <&xy_scaler 2 3>;
             };
         //    scroll {
         //            layers = <MSC>;
-        //            inherit;
         //            input-processors = <&xy_scaler 1 22>, <&x_scaler 0 1>
         //                                , <&to_wheel>;
         //    };
@@ -118,7 +116,6 @@
     //         device = <&m_v>;
     //         scroll {
     //                 layers = <MSC>;
-    //                 inherit;
     //                 input-processors = <&xy_transf (INPUT_TRANSFORM_Y_INVERT)>
     //                                     , <&xy_scaler 1 75>, <&to_wheel>;
     //         };
