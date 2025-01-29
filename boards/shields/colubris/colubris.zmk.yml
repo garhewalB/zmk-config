@@ -2,12 +2,13 @@ file_format: "1"
 id: colubris
 name: Colubris
 type: shield
-url: https://github.com/warfareonly/colubris/
+url: https://github.com/garhewalB/colubris/
 requires: [pro_micro]
 exposes: []
 features:
   - keys
-  - display
+  - pointer
+  - studio
 siblings:
   - colubris_central_dongle
   - colubris_central_left
