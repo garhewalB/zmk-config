@@ -113,16 +113,16 @@
             };
     };
 
-    mmv_input_listener {
-            compatible = "zmk,input-listener";
-            device = <&m_v>;
-            scroll {
-                    layers = <MSC>;
-                    inherit;
-                    input-processors = <&xy_transf (INPUT_TRANSFORM_Y_INVERT)>
-                                        , <&xy_scaler 1 75>, <&to_wheel>;
-            };
-    };
+    // mmv_input_listener {
+    //         compatible = "zmk,input-listener";
+    //         device = <&m_v>;
+    //         scroll {
+    //                 layers = <MSC>;
+    //                 inherit;
+    //                 input-processors = <&xy_transf (INPUT_TRANSFORM_Y_INVERT)>
+    //                                     , <&xy_scaler 1 75>, <&to_wheel>;
+    //         };
+    // };
 
     behaviors {
         aml: alpha_mods_l {
