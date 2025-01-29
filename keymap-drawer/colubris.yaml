@@ -10,26 +10,26 @@ layers:
   - U
   - Y
   - ''''
-  - {t: A, h: LGUI}
-  - {t: R, h: LALT}
-  - {t: S, h: LCTRL}
-  - {t: T, h: LSHFT}
+  - {t: A, h: Gui}
+  - {t: R, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
   - G
   - M
-  - {t: N, h: RSHFT}
-  - {t: E, h: RCTRL}
-  - {t: I, h: RALT}
-  - {t: O, h: RGUI}
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
   - X
   - C
   - {t: D, h: MSE}
   - H
   - ','
   - .
-  - {t: ESC, h: LCTRL}
-  - {t: SPACE, h: NAV}
-  - {t: BSPC, h: SYM}
-  - {t: RET, h: RSHFT}
+  - {t: Esc, h: Ctrl}
+  - {t: ␣, h: NAV}
+  - {t: ⌫, h: SYM}
+  - {t: ⏎, h: Shift}
   SYM:
   - '!'
   - '@'
@@ -51,55 +51,55 @@ layers:
   - '5'
   - '6'
   - .
-  - '&inv_qm'
+  - ¿
   - '*'
   - '&'
   - '1'
   - '2'
   - '3'
-  - BSPC
+  - ⌫
   - {t: ▽, type: trans}
   - {type: held}
   - ''
   NAV:
-  - Alt+F4
-  - Ctl+Sft+TAB
-  - Ctl+TAB
-  - Ctl+F4
-  - VOL UP
-  - INS
-  - PG DN
-  - UP
-  - PG UP
-  - AL CALC
-  - LCTRL
-  - LGUI
-  - LALT
-  - {t: TAB, h: LSHFT}
-  - VOL DN
-  - HOME
-  - LEFT
-  - DOWN
-  - RIGHT
-  - END
-  - Sft+TAB
-  - '&swapper'
-  - Sft+INS
-  - DEL
-  - PREV
-  - NEXT
+  - Win Close
+  - Tab Left
+  - Tab Right
+  - Tab Close
+  - Vol Up
+  - Insert
+  - Page Down
+  - ↑
+  - Page Up
+  - Calc
+  - Ctrl
+  - Gui
+  - Alt
+  - {t: ↹, h: Shift}
+  - Vol Down
+  - Home
+  - ←
+  - ↓
+  - →
+  - End
+  - Win Prev
+  - Win Next
+  - Paste
+  - ⌦
+  - ⏮️
+  - ⏭️
   - ''
   - {type: held}
   - {t: ▽, type: trans}
-  - SPACE
+  - ␣
   FUN:
   - F1
   - F2
   - F3
   - F4
   - F5
-  - OUT USB
-  - OUT BLE
+  - Out USB
+  - Out BLE
   - ''
   - ''
   - ''
@@ -108,52 +108,52 @@ layers:
   - F8
   - F9
   - F10
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - Ctl+Gui+LEFT
-  - Ctl+Gui+RIGHT
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - Desk Left
+  - Desk Right
   - F11
-  - CAPS
-  - PSCRN
-  - PAUSE BREAK
-  - {t: '&sys_reset', h: '&bootloader'}
+  - Caps Lock
+  - Print Scrn
+  - Pause Break
+  - {t: Reset, h: Boot}
   - {type: held}
   - {type: held}
-  - {t: '&sys_reset', h: '&bootloader'}
+  - {t: Reset, h: Boot}
   MSE:
   - ''
   - ''
   - ''
   - ''
   - ''
-  - '&msc SCRL_LEFT'
-  - '&msc SCRL_DOWN'
-  - '&mmv MOVE_UP'
-  - '&msc SCRL_UP'
-  - '&msc SCRL_RIGHT'
-  - LCTRL
-  - LGUI
-  - LALT
-  - LSHFT
+  - Scroll ←
+  - Scroll ↓
+  - Mouse ↑
+  - Scroll ↑
+  - Scroll →
+  - Ctrl
+  - Gui
+  - Alt
+  - Shift
   - ''
-  - '&mkp RCLK'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
+  - Right Click
+  - Mouse ←
+  - Mouse ↓
+  - Mouse →
   - ''
-  - '&mkp RCLK'
-  - '&mkp MCLK'
-  - {t: '&mkp LCLK', type: held}
-  - '&mkp MB4'
-  - '&mkp MCLK'
-  - '&mkp MB5'
+  - Right Click
+  - Middle Click
+  - {t: Left Click, type: held}
+  - Back Click
+  - Middle Click
+  - Forward Click
   - ''
   - {t: ▽, type: trans}
-  - '&mkp LCLK'
-  - '&mkp RCLK'
+  - Left Click
+  - Right Click
 combos:
 - p: [2, 3]
   k: J
@@ -161,42 +161,55 @@ combos:
 - p: [6, 7]
   k: ;
   l: [DEF, SYM]
+  draw_separate: true
 - p: [7, 8]
   k: '`'
   l: [DEF]
+  draw_separate: true
 - p: [12, 13]
   k: (
   l: [DEF]
+  draw_separate: true
 - p: [16, 17]
   k: )
   l: [DEF]
+  draw_separate: true
 - p: [11, 12]
   k: '['
   l: [DEF]
+  draw_separate: true
 - p: [17, 18]
   k: ']'
   l: [DEF]
+  draw_separate: true
 - p: [11, 13]
-  k: TAB
+  k: ↹
   l: [DEF, SYM]
+  draw_separate: true
 - p: [16, 18]
-  k: DEL
+  k: ⌦
   l: [DEF, SYM]
+  draw_separate: true
 - p: [11, 12, 13]
-  k: ESC
+  k: Esc
   l: [DEF, SYM]
+  draw_separate: true
 - p: [16, 17, 18]
-  k: RET
+  k: ⏎
   l: [DEF, SYM]
+  draw_separate: true
 - p: [13, 16]
-  k: '&caps_word'
+  k: Caps Word
   l: [DEF]
+  draw_separate: true
 - p: [3, 4]
-  k: Gui+L
+  k: Lock
   l: [DEF]
+  draw_separate: true
 - p: [4, 14]
-  k: PP
+  k: ⏯
   l: [NAV]
+  a: right
 - p: [20, 21]
   k: Z
   l: [DEF]
@@ -206,17 +219,21 @@ combos:
 - p: [23, 24]
   k: \
   l: [DEF]
+  draw_separate: true
 - p: [24, 25]
   k: /
   l: [DEF, SYM]
+  draw_separate: true
 - p: [20, 21]
   k: F12
   l: [FUN]
+  a: bottom
 - p: [24, 25]
   k: BT CLR
   l: [FUN]
+  a: bottom
 - p: [4, 5]
-  k: '&bootloader'
+  k: Boot
   l: [FUN]
 - p: [26, 27]
   k: MSE
