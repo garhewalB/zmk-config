@@ -5,7 +5,7 @@ layers:
   - F
   - P
   - B
-  - K
+  - J
   - L
   - U
   - Y
@@ -156,7 +156,7 @@ layers:
   - Right Click
 combos:
 - p: [2, 3]
-  k: J
+  k: K
   l: [DEF]
 - p: [6, 7]
   k: ;
