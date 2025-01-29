@@ -1,7 +1,7 @@
-ZMK Config for Hookah Wireless
+ZMK Config for the Colubris and Hookah Wireless keyboards.
 
 ## Keymap
 
 *Generated with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)*
  
-![](keymap-drawer/hookah.svg)
+![](keymap-drawer/colubris.svg)
