@@ -13,10 +13,10 @@ manifest:
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      # remote: zmkfirmware
-      # revision: main
-      remote: badjeff
-      revision: feat/pointers-with-input-processors
+      remote: zmkfirmware
+      revision: main
+      # remote: badjeff
+      # revision: feat/pointers-with-input-processors
       import: app/west.yml
     - name: zmk-dongle-display
       remote: englmaxi
