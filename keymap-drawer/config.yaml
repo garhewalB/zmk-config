@@ -108,6 +108,8 @@ parse_config:
     C_PP: ⏯
     C_NEXT: ⏭️
     C_PREV: ⏮️
+    
+    STUDIO_UNLOCK: Studio 🔒
 
     # defaults
     AMPERSAND: '&'
