@@ -28,8 +28,8 @@ layers:
   - .
   - {t: Esc, h: Ctrl}
   - {t: ␣, h: NAV}
-  - {t: ⌫, h: SYM}
-  - {t: ⏎, h: Shift}
+  - {t: ⏎, h: SYM}
+  - {t: BKSP, h: Shift}
   SYM:
   - '!'
   - '@'
