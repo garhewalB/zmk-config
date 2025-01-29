@@ -215,12 +215,6 @@ combos:
 - p: [24, 25]
   k: BT CLR
   l: [FUN]
-- p: [2, 7]
-  k: '&ind_bat'
-  l: [FUN]
-- p: [3, 6]
-  k: '&ind_con'
-  l: [FUN]
 - p: [4, 5]
   k: '&bootloader'
   l: [FUN]
