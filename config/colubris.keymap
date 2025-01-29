@@ -22,7 +22,7 @@
 // Extra key bindings
 #define SWP_POS LB3
 
-#include "combos.dtsi"
+#include "includes/combos.dtsi"
 
 #ifdef EXTERNAL_POWER
 #    define FN_EXTRA1 &ext_power EP_ON
@@ -32,7 +32,7 @@
 #    define FN_EXTRA2 &kp PAUSE_BREAK
 #endif
 
-#include "mouse.dtsi"
+#include "includes/mouse.dtsi"
 
 &mt {
     flavor = "hold-preferred";
