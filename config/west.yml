@@ -9,6 +9,8 @@ manifest:
       url-base: https://github.com/infused-kim
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
       # remote: zmkfirmware
@@ -21,6 +23,9 @@ manifest:
       revision: main
     - name: kb_zmk_ps2_mouse_trackpoint_driver
       remote: badjeff
+      revision: main
+    - name: zmk-smart-toggle
+      remote: caksoylar
       revision: main
 
   self:
