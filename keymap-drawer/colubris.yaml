@@ -100,7 +100,7 @@ layers:
   - F5
   - Out USB
   - Out BLE
-  - ''
+  - '&studio_unlock'
   - ''
   - ''
   - F6
