@@ -144,9 +144,9 @@ layers:
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
   - ''
-  - ''
-  - ''
-  - {type: held}
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  - {t: '&mkp LCLK', type: held}
   - '&mkp MB4'
   - '&mkp MCLK'
   - '&mkp MB5'
