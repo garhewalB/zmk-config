@@ -6,7 +6,6 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "colubris-layout.dtsi"
-#include <input/processors.dtsi>
 
 &colubris_layout{
         kscan = <&kscan0>;
@@ -56,6 +55,5 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&tpoint_split>;
-        // input-processors = <&zip_xy_swap_mapper>;
   };
 };
