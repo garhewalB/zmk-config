@@ -56,6 +56,6 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&tpoint_split>;
-        input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP)>;
+        input-processors = <&zip_xy_swap_mapper>;
   };
 };
