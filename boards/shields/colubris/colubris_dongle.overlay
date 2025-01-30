@@ -57,6 +57,7 @@
     };
 };
 
+// Enable the tp listener for the central dongle.
 &tpoint_listener {
     status = "okay";
 };
