@@ -39,7 +39,7 @@ COMBO(lock,   &kp LG(L),   LT1 LT0,     DEF,      80, 500)
 COMBO(play,   &kp C_PP,    LT0 LM0,     NAV,         200, 200)
 
 COMBO(z,      &kp Z,       LB3 LB2,     DEF,      80,  50)
-COMBO(v,      &kp V,       LB2 LB1,     DEF,          40,  50)
+COMBO(v,      &kp V,       LB2 LB1,     DEF,      40,  50)
 COMBO(bslh,   &kp BSLH,    RB1 RB2,     DEF,      80, 100)
 COMBO(slsh,   &kp SLASH,   RB2 RB3,     DEF SYM,  80,  50)
 
