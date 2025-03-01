@@ -243,11 +243,11 @@
             display-name = "NAV";
             bindings = <LAYER_FROM36( \
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LA(F4),   &kp TAB_LT,   &kp TAB_RT,   &kp LC(F4),   &kp C_VOL_UP,     &kp INS,      &kp PG_UP,    &kp UP,       &kp PG_DN,    &kp C_AL_CALC, \
+     &kp LA(F4),   &kp TAB_LT,   &kp TAB_RT,   &kp LC(F4),   &kp C_VOL_UP,     &kp INS,      &kp END,      &kp HOME,     &kp DEL,      &none,        \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL,    &kp LGUI,     &kp LALT,     &mt LSHFT TAB, &kp C_VOL_DN,    &kp HOME,     &kp LEFT,     &kp DOWN,     &kp RIGHT,    &kp END,       \
+     &kp LCTRL,    &kp LGUI,     &kp LALT,     &mt LSHFT TAB, &kp C_VOL_DN,    &kp LEFT,     &kp DOWN,     &kp UP,       &kp RIGHT,    &kp C_PREV,       \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none,        &kp LS(TAB),  &swapper,     &kp LS(INS),  &kp C_PP,         &none,        &kp DEL,      &kp C_PREV,   &kp C_NEXT,   &none,         \
+     &none,        &kp LS(TAB),  &swapper,     &kp LS(INS),  &kp C_PP,         &none,        &kp PG_DN,    &kp PG_UP,   &kp C_NEXT,   &none,         \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  &kp LGUI,     &none,        &trans,           &trans,       &kp SPACE,    &kp RALT                                   \
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
