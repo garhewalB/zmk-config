@@ -136,7 +136,7 @@
 	status = "okay";
 };
 &tpoint_device {
-	status = "okay";
+	# status = "okay";
 	disable-clicking;
 	tp-sensitivity = <128>;
 	sampling-rate = <80>;
