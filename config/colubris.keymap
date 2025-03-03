@@ -1,5 +1,5 @@
 // #include "boards/shields/colubris/keypos_def/keypos_30keys.h"
-#include "keypos_def/keypos_30keys.h"
+// #include "keypos_def/keypos_30keys.h"
 
 #include <behaviors.dtsi>
 #include <behaviors/studio_unlock.dtsi>
@@ -27,7 +27,7 @@
 #define SWP_POS LB3
 
 // #include "boards/shields/colubris/includes/combos.dtsi"
-#include "includes/combos.dtsi"
+// #include "includes/combos.dtsi"
 
 #ifdef EXTERNAL_POWER
 #    define FN_EXTRA1 &ext_power EP_ON
