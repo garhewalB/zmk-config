@@ -22,75 +22,129 @@ layers:
     - {t: RET, h: SYM}
     - {t: BKSP, h: RSHFT}
   SYM:
-  - ['!', '@', '#', $, '%', /, '7', '8', '9', ',']
-  - [+, '=', _, '-', ^, '0', '4', '5', '6', .]
-  - - '~'
-    - '*'
-    - '&'
-    - '1'
-    - '2'
-    - '3'
-    - BSPC
-    - {t: ▽, type: trans}
-    - {type: held}
-    - ''
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - ','
+  - +
+  - '='
+  - _
+  - '-'
+  - ^
+  - '0'
+  - '4'
+  - '5'
+  - '6'
+  - .
+  - '~'
+  - '*'
+  - '&'
+  - '1'
+  - '2'
+  - '3'
+  - ⌫
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
   NAV:
-  - [Alt+F4, Ctl+Sft+TAB, Ctl+TAB, Ctl+F4, VOL UP, INS, END, HOME, DEL, '']
-  - - LCTRL
-    - LGUI
-    - LALT
-    - {t: TAB, h: LSHFT}
-    - VOL DN
-    - LEFT
-    - DOWN
-    - UP
-    - RIGHT
-    - PREV
-  - - Sft+TAB
-    - '&swapper'
-    - Sft+INS
-    - PG DN
-    - PG UP
-    - NEXT
-    - ''
-    - {type: held}
-    - {t: ▽, type: trans}
-    - SPACE
+  - Win Close
+  - Tab Left
+  - Tab Right
+  - Tab Close
+  - Vol Up
+  - Insert
+  - End
+  - Home
+  - ⌦
+  - ''
+  - Ctrl
+  - Gui
+  - Alt
+  - {t: ↹, h: Shift}
+  - Vol Down
+  - ←
+  - ↓
+  - ↑
+  - →
+  - ⏮️
+  - Win Prev
+  - Win Next
+  - Paste
+  - Page Down
+  - Page Up
+  - ⏭️
+  - ''
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ␣
   FUN:
-  - [F1, F2, F3, F4, F5, OUT USB, OUT BLE, '&studio_unlock', '', '']
-  - - F6
-    - F7
-    - F8
-    - F9
-    - F10
-    - {t: BT, h: '0'}
-    - {t: BT, h: '1'}
-    - {t: BT, h: '2'}
-    - {t: BT, h: '3'}
-    - {t: BT, h: '4'}
-  - - Ctl+Gui+LEFT
-    - Ctl+Gui+RIGHT
-    - F11
-    - CAPS
-    - ''
-    - ''
-    - {t: '&sys_reset', h: '&bootloader'}
-    - {type: held}
-    - {type: held}
-    - {t: '&sys_reset', h: '&bootloader'}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - Out USB
+  - Out BLE
+  - '&studio_unlock'
+  - ''
+  - ''
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - Desk Left
+  - Desk Right
+  - F11
+  - Caps Lock
+  - ''
+  - ''
+  - {t: Reset, h: Boot}
+  - {type: held}
+  - {type: held}
+  - {t: Reset, h: Boot}
   MSE:
-  - ['', '', '', '', '', '&msc SCRL_LEFT', '&msc SCRL_DOWN', '&mmv MOVE_UP', '&msc SCRL_UP', '&msc SCRL_RIGHT']
-  - [LCTRL, LGUI, LALT, LSHFT, '', '', '', '', '', '']
-  - - '&mkp RCLK'
-    - '&mkp MCLK'
-    - {t: '&mkp LCLK', type: held}
-    - '&mkp MB4'
-    - '&mkp MCLK'
-    - '&mkp MB5'
-    - ''
-    - {t: ▽, type: trans}
-    - '&mkp LCLK'
-    - '&mkp RCLK'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ←
+  - Scroll ↓
+  - Mouse ↑
+  - Scroll ↑
+  - Scroll →
+  - Ctrl
+  - Gui
+  - Alt
+  - Shift
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Right Click
+  - Middle Click
+  - {t: Left Click, type: held}
+  - Back Click
+  - Middle Click
+  - Forward Click
+  - ''
+  - {t: ▽, type: trans}
+  - Left Click
+  - Right Click
 combos:
 - p: [2, 3]
   k: K
