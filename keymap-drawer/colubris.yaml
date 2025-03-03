@@ -1,26 +1,35 @@
 layers:
   DEF:
-  - [Q, W, F, P, B, J, L, U, Y, '''']
-  - - {t: A, h: LGUI}
-    - {t: R, h: LALT}
-    - {t: S, h: LCTRL}
-    - {t: T, h: LSHFT}
-    - G
-    - M
-    - {t: N, h: RSHFT}
-    - {t: E, h: RCTRL}
-    - {t: I, h: RALT}
-    - {t: O, h: RGUI}
-  - - X
-    - C
-    - {t: D, h: MSE}
-    - H
-    - ','
-    - .
-    - {t: ESC, h: LCTRL}
-    - {t: SPACE, h: NAV}
-    - {t: RET, h: SYM}
-    - {t: BKSP, h: RSHFT}
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: Gui}
+  - {t: R, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
+  - X
+  - C
+  - {t: D, h: MSE}
+  - H
+  - ','
+  - .
+  - {t: Esc, h: Ctrl}
+  - {t: ␣, h: NAV}
+  - {t: ⏎, h: SYM}
+  - {t: BKSP, h: Shift}
   SYM:
   - '!'
   - '@'
@@ -33,15 +42,15 @@ layers:
   - '9'
   - ','
   - +
-  - '='
-  - _
-  - '-'
+  - {t: '=', h: Alt}
+  - {t: _, h: Ctrl}
+  - '&LSHFT MINUS'
   - ^
   - '0'
-  - '4'
-  - '5'
-  - '6'
-  - .
+  - {t: '4', h: Shift}
+  - {t: '5', h: Ctrl}
+  - {t: '6', h: Alt}
+  - {t: ., h: Gui}
   - '~'
   - '*'
   - '&'
@@ -168,26 +177,32 @@ combos:
   k: ']'
   l: [DEF]
 - p: [11, 13]
-  k: TAB
+  k: ↹
   l: [DEF, SYM]
+  draw_separate: true
 - p: [16, 18]
-  k: DEL
+  k: ⌦
   l: [DEF, SYM]
+  draw_separate: true
 - p: [11, 12, 13]
-  k: ESC
+  k: Esc
   l: [DEF, SYM]
+  draw_separate: true
 - p: [16, 17, 18]
-  k: RET
+  k: ⏎
   l: [DEF, SYM]
+  draw_separate: true
 - p: [13, 16]
-  k: '&caps_word'
+  k: Caps Word
   l: [DEF]
+  a: top
 - p: [3, 4]
-  k: Gui+L
+  k: Lock
   l: [DEF]
 - p: [4, 14]
-  k: PP
+  k: ⏯
   l: [NAV]
+  a: right
 - p: [20, 21]
   k: Z
   l: [DEF]
@@ -203,11 +218,13 @@ combos:
 - p: [20, 21]
   k: F12
   l: [FUN]
+  a: bottom
 - p: [24, 25]
   k: BT CLR
   l: [FUN]
+  a: bottom
 - p: [4, 5]
-  k: '&bootloader'
+  k: Boot
   l: [FUN]
 - p: [26, 27]
   k: MSE
