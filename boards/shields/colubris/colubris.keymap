@@ -22,6 +22,13 @@
 #define TAB_RT LC(TAB)
 #define TAB_LT LC(LS(TAB))
 
+// HRM macro
+#define HRM(\
+K00, K01, K02, K03, K04, K05, K06, K07, K08, K09)\
+&hrm LGUI K00,  &hrm LALT K01,  &hrm LCTRL K02, &hrm LSHFT K03, &kp K04,            &kp K05,        &hrm RSHFT K06, &hrm RCTRL K07, &hrm RALT K08,  &hrm RGUI K09 
+
+
+
 // Extra key bindings
 #define SWP_POS LB3
 
@@ -126,6 +133,16 @@
     // };
 
     behaviors {
+        hrm: home_row_mod {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            // hold-trigger-key-positions = <KEYS_R THUMBS>;
+            // hold-trigger-on-release;
+        };
         aml: alpha_mods_l {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -215,7 +232,8 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &kp Q,        &kp W,        &kp F,        &kp P,        &kp B,            &kp J,        &kp L,        &kp U,        &kp Y,        &kp SQT,      \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &aml LGUI A,  &aml LALT R,  &aml LCTRL S, &asl LSHFT T, &kp G,            &kp M,        &asr RSHFT N, &amr RCTRL E, &amr RALT I,  &amr RGUI O, \
+//   &aml LGUI A,  &aml LALT R,  &aml LCTRL S, &asl LSHFT T, &kp G,            &kp M,        &asr RSHFT N, &amr RCTRL E, &amr RALT I,  &amr RGUI O, \
+     HRM(A,                  R,             S,            T,     G,                M,                   N,            E,           I,            O), \
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                    &kp X,        &kp C,        &lt MSE D,                                    &kp H,        &kp COMMA,    &kp DOT,                    \
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
