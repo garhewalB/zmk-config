@@ -37,7 +37,7 @@
 #    define FN_EXTRA2 &kp PAUSE_BREAK
 #endif
 
-#include "includes/mouse.dtsi"
+// #include "includes/mouse.dtsi"
 
 &mt {
     flavor = "hold-preferred";
