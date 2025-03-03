@@ -51,7 +51,7 @@ layers:
   - '5'
   - '6'
   - .
-  - ¿
+  - '~'
   - '*'
   - '&'
   - '1'
@@ -68,25 +68,25 @@ layers:
   - Tab Close
   - Vol Up
   - Insert
-  - Page Down
-  - ↑
-  - Page Up
-  - Calc
+  - End
+  - Home
+  - ⌦
+  - ''
   - Ctrl
   - Gui
   - Alt
   - {t: ↹, h: Shift}
   - Vol Down
-  - Home
   - ←
   - ↓
+  - ↑
   - →
-  - End
+  - ⏮️
   - Win Prev
   - Win Next
   - Paste
-  - ⌦
-  - ⏮️
+  - Page Down
+  - Page Up
   - ⏭️
   - ''
   - {type: held}
@@ -117,8 +117,8 @@ layers:
   - Desk Right
   - F11
   - Caps Lock
-  - Print Scrn
-  - Pause Break
+  - ''
+  - ''
   - {t: Reset, h: Boot}
   - {type: held}
   - {type: held}
@@ -139,10 +139,10 @@ layers:
   - Alt
   - Shift
   - ''
-  - Right Click
-  - Mouse ←
-  - Mouse ↓
-  - Mouse →
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - Right Click
   - Middle Click
