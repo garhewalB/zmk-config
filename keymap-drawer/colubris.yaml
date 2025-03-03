@@ -44,7 +44,7 @@ layers:
   - +
   - {t: '=', h: Alt}
   - {t: _, h: Ctrl}
-  - '&LSHFT MINUS'
+  - {t: '-', h: Shift}
   - ^
   - '0'
   - {t: '4', h: Shift}
