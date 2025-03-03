@@ -10,15 +10,15 @@ layers:
   - U
   - Y
   - ''''
-  - {t: A, h: Gui}
-  - {t: R, h: Alt}
-  - {t: S, h: Ctrl}
-  - {t: T, h: Shift}
-  - G
-  - M
-  - {t: N, h: Shift}
-  - {t: E, h: Ctrl}
-  - {t: I, h: Alt}
+  - {t: 'A,', h: Gui}
+  - {t: 'R,', h: Alt}
+  - {t: 'S,', h: Ctrl}
+  - {t: 'T,', h: Shift}
+  - G,
+  - M,
+  - {t: 'N,', h: Shift}
+  - {t: 'E,', h: Ctrl}
+  - {t: 'I,', h: Alt}
   - {t: O, h: Gui}
   - X
   - C
