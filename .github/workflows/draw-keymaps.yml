@@ -16,9 +16,9 @@ jobs:
     permissions:
       contents: write  # allow workflow to commit to the repo
     with:
-      keymap_patterns: "config/*.keymap"        # path to the keymaps to parse
+      keymap_patterns: "boards/*/*/*.keymap"        # path to the keymaps to parse
       config_path: "keymap-drawer/config.yaml"  # config file, ignored if not exists
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
-      parse_args: ""  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
-      draw_args: "colubris:'-d boards/shields/colubris/colubris-layout.dtsi -d colubris_layout' hookah:'-d boards/shields/hookah/hookah-layouts.dtsi -l hookah_layout'"   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
+      parse_args: "colubris: '-c 10 -z boards/shields/colubris/colubris.keymap'"  # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
+      draw_args: "colubris:'-c 10 --dts-layout boards/shields/colubris/colubris-layout.dtsi' hookah:'-d boards/shields/hookah/hookah-layouts.dtsi -l hookah_layout'"   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
       amend_commit: true

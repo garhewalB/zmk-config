@@ -1,159 +1,96 @@
 layers:
   DEF:
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ''''
-  - {t: A, h: Gui}
-  - {t: R, h: Alt}
-  - {t: S, h: Ctrl}
-  - {t: T, h: Shift}
-  - G
-  - M
-  - {t: N, h: Shift}
-  - {t: E, h: Ctrl}
-  - {t: I, h: Alt}
-  - {t: O, h: Gui}
-  - X
-  - C
-  - {t: D, h: MSE}
-  - H
-  - ','
-  - .
-  - {t: Esc, h: Ctrl}
-  - {t: ␣, h: NAV}
-  - {t: ⏎, h: SYM}
-  - {t: BKSP, h: Shift}
+  - [Q, W, F, P, B, J, L, U, Y, '''']
+  - - {t: A, h: LGUI}
+    - {t: R, h: LALT}
+    - {t: S, h: LCTRL}
+    - {t: T, h: LSHFT}
+    - G
+    - M
+    - {t: N, h: RSHFT}
+    - {t: E, h: RCTRL}
+    - {t: I, h: RALT}
+    - {t: O, h: RGUI}
+  - - X
+    - C
+    - {t: D, h: MSE}
+    - H
+    - ','
+    - .
+    - {t: ESC, h: LCTRL}
+    - {t: SPACE, h: NAV}
+    - {t: RET, h: SYM}
+    - {t: BKSP, h: RSHFT}
   SYM:
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - /
-  - '7'
-  - '8'
-  - '9'
-  - ','
-  - +
-  - '='
-  - _
-  - '-'
-  - ^
-  - '0'
-  - '4'
-  - '5'
-  - '6'
-  - .
-  - ¿
-  - '*'
-  - '&'
-  - '1'
-  - '2'
-  - '3'
-  - ⌫
-  - {t: ▽, type: trans}
-  - {type: held}
-  - ''
+  - ['!', '@', '#', $, '%', /, '7', '8', '9', ',']
+  - [+, '=', _, '-', ^, '0', '4', '5', '6', .]
+  - - '~'
+    - '*'
+    - '&'
+    - '1'
+    - '2'
+    - '3'
+    - BSPC
+    - {t: ▽, type: trans}
+    - {type: held}
+    - ''
   NAV:
-  - Win Close
-  - Tab Left
-  - Tab Right
-  - Tab Close
-  - Vol Up
-  - Insert
-  - Page Down
-  - ↑
-  - Page Up
-  - Calc
-  - Ctrl
-  - Gui
-  - Alt
-  - {t: ↹, h: Shift}
-  - Vol Down
-  - Home
-  - ←
-  - ↓
-  - →
-  - End
-  - Win Prev
-  - Win Next
-  - Paste
-  - ⌦
-  - ⏮️
-  - ⏭️
-  - ''
-  - {type: held}
-  - {t: ▽, type: trans}
-  - ␣
+  - [Alt+F4, Ctl+Sft+TAB, Ctl+TAB, Ctl+F4, VOL UP, INS, END, HOME, DEL, '']
+  - - LCTRL
+    - LGUI
+    - LALT
+    - {t: TAB, h: LSHFT}
+    - VOL DN
+    - LEFT
+    - DOWN
+    - UP
+    - RIGHT
+    - PREV
+  - - Sft+TAB
+    - '&swapper'
+    - Sft+INS
+    - PG DN
+    - PG UP
+    - NEXT
+    - ''
+    - {type: held}
+    - {t: ▽, type: trans}
+    - SPACE
   FUN:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - Out USB
-  - Out BLE
-  - '&studio_unlock'
-  - ''
-  - ''
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - Desk Left
-  - Desk Right
-  - F11
-  - Caps Lock
-  - Print Scrn
-  - Pause Break
-  - {t: Reset, h: Boot}
-  - {type: held}
-  - {type: held}
-  - {t: Reset, h: Boot}
+  - [F1, F2, F3, F4, F5, OUT USB, OUT BLE, '&studio_unlock', '', '']
+  - - F6
+    - F7
+    - F8
+    - F9
+    - F10
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - {t: BT, h: '4'}
+  - - Ctl+Gui+LEFT
+    - Ctl+Gui+RIGHT
+    - F11
+    - CAPS
+    - ''
+    - ''
+    - {t: '&sys_reset', h: '&bootloader'}
+    - {type: held}
+    - {type: held}
+    - {t: '&sys_reset', h: '&bootloader'}
   MSE:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Scroll ←
-  - Scroll ↓
-  - Mouse ↑
-  - Scroll ↑
-  - Scroll →
-  - Ctrl
-  - Gui
-  - Alt
-  - Shift
-  - ''
-  - Right Click
-  - Mouse ←
-  - Mouse ↓
-  - Mouse →
-  - ''
-  - Right Click
-  - Middle Click
-  - {t: Left Click, type: held}
-  - Back Click
-  - Middle Click
-  - Forward Click
-  - ''
-  - {t: ▽, type: trans}
-  - Left Click
-  - Right Click
+  - ['', '', '', '', '', '&msc SCRL_LEFT', '&msc SCRL_DOWN', '&mmv MOVE_UP', '&msc SCRL_UP', '&msc SCRL_RIGHT']
+  - [LCTRL, LGUI, LALT, LSHFT, '', '', '', '', '', '']
+  - - '&mkp RCLK'
+    - '&mkp MCLK'
+    - {t: '&mkp LCLK', type: held}
+    - '&mkp MB4'
+    - '&mkp MCLK'
+    - '&mkp MB5'
+    - ''
+    - {t: ▽, type: trans}
+    - '&mkp LCLK'
+    - '&mkp RCLK'
 combos:
 - p: [2, 3]
   k: K
@@ -177,32 +114,26 @@ combos:
   k: ']'
   l: [DEF]
 - p: [11, 13]
-  k: ↹
+  k: TAB
   l: [DEF, SYM]
-  draw_separate: true
 - p: [16, 18]
-  k: ⌦
+  k: DEL
   l: [DEF, SYM]
-  draw_separate: true
 - p: [11, 12, 13]
-  k: Esc
+  k: ESC
   l: [DEF, SYM]
-  draw_separate: true
 - p: [16, 17, 18]
-  k: ⏎
+  k: RET
   l: [DEF, SYM]
-  draw_separate: true
 - p: [13, 16]
-  k: Caps Word
+  k: '&caps_word'
   l: [DEF]
-  a: top
 - p: [3, 4]
-  k: Lock
+  k: Gui+L
   l: [DEF]
 - p: [4, 14]
-  k: ⏯
+  k: PP
   l: [NAV]
-  a: right
 - p: [20, 21]
   k: Z
   l: [DEF]
@@ -218,13 +149,11 @@ combos:
 - p: [20, 21]
   k: F12
   l: [FUN]
-  a: bottom
 - p: [24, 25]
   k: BT CLR
   l: [FUN]
-  a: bottom
 - p: [4, 5]
-  k: Boot
+  k: '&bootloader'
   l: [FUN]
 - p: [26, 27]
   k: MSE
