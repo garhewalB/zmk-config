@@ -10,15 +10,15 @@ layers:
   - U
   - Y
   - ''''
-  - {t: 'A,', h: Gui}
-  - {t: 'R,', h: Alt}
-  - {t: 'S,', h: Ctrl}
-  - {t: 'T,', h: Shift}
-  - G,
-  - M,
-  - {t: 'N,', h: Shift}
-  - {t: 'E,', h: Ctrl}
-  - {t: 'I,', h: Alt}
+  - {t: A, h: Gui}
+  - {t: R, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
   - {t: O, h: Gui}
   - X
   - C
@@ -41,15 +41,15 @@ layers:
   - U
   - Y
   - ''''
-  - {t: 'SEMI,', h: Gui}
-  - {t: '4,', h: Alt}
-  - {t: '5,', h: Ctrl}
-  - {t: '6,', h: Shift}
-  - EQUAL,
-  - M,
-  - {t: 'N,', h: Shift}
-  - {t: 'E,', h: Ctrl}
-  - {t: 'I,', h: Alt}
+  - {t: ;, h: Gui}
+  - {t: '4', h: Alt}
+  - {t: '5', h: Ctrl}
+  - {t: '6', h: Shift}
+  - '='
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
   - {t: O, h: Gui}
   - '1'
   - '2'
