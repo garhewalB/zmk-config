@@ -24,9 +24,9 @@
 #define TAB_LT LC(LS(TAB))
 
 // HRM macro
-#define HRM(\
-K00, K01, K02, K03, K04, K05, K06, K07, K08, K09)\
-&hrm LGUI K00,  &hrm LALT K01,  &hrm LCTRL K02, &hrm LSHFT K03, &kp K04,            &kp K05,        &hrm RSHFT K06, &hrm RCTRL K07, &hrm RALT K08,  &hrm RGUI K09 
+#define HRM(K00, K01, K02, K03, K04, K05, K06, K07, K08, K09) \
+&hrm LGUI K00,  &hrm LALT K01,  &hrm LCTRL K02, &hrm LSHFT K03, &kp K04, \
+&kp K05, &hrm RSHFT K06, &hrm RCTRL K07, &hrm RALT K08,  &hrm RGUI K09 
 
 
 
