@@ -29,38 +29,38 @@ layers:
   - {t: Esc, h: Ctrl}
   - {t: ␣, h: NAV}
   - {t: ⏎, h: SYM}
-  - {t: BKSP, h: Shift}
-  SYM:
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - /
+  - {t: BKSP, h: NUM}
+  NUM:
+  - '['
   - '7'
   - '8'
   - '9'
-  - ','
-  - +
-  - {t: '=', h: Alt}
-  - {t: _, h: Ctrl}
-  - {t: '-', h: Shift}
-  - ^
-  - '0'
-  - {t: '4', h: Shift}
-  - {t: '5', h: Ctrl}
-  - {t: '6', h: Alt}
-  - {t: ., h: Gui}
-  - '~'
-  - '*'
-  - '&'
+  - ']'
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: 'SEMI,', h: Gui}
+  - {t: '4,', h: Alt}
+  - {t: '5,', h: Ctrl}
+  - {t: '6,', h: Shift}
+  - EQUAL,
+  - M,
+  - {t: 'N,', h: Shift}
+  - {t: 'E,', h: Ctrl}
+  - {t: 'I,', h: Alt}
+  - {t: O, h: Gui}
   - '1'
   - '2'
   - '3'
-  - ⌫
-  - {t: ▽, type: trans}
-  - {type: held}
-  - ''
+  - H
+  - ','
+  - .
+  - '0'
+  - '-'
+  - {t: ⏎, h: SYM}
+  - {t: BKSP, h: Shift, type: held}
   NAV:
   - Win Close
   - Tab Left
@@ -92,6 +92,37 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - ␣
+  SYM:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - ','
+  - +
+  - {t: '=', h: Alt}
+  - {t: _, h: Ctrl}
+  - {t: '-', h: Shift}
+  - ^
+  - '0'
+  - {t: '4', h: Shift}
+  - {t: '5', h: Ctrl}
+  - {t: '6', h: Alt}
+  - {t: ., h: Gui}
+  - '~'
+  - '*'
+  - '&'
+  - '1'
+  - '2'
+  - '3'
+  - ⌫
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
   FUN:
   - F1
   - F2
@@ -209,9 +240,9 @@ combos:
 - p: [21, 22]
   k: V
   l: [DEF]
-- p: [23, 24]
+- p: [21, 22]
   k: \
-  l: [DEF]
+  l: [NAV]
 - p: [24, 25]
   k: /
   l: [DEF, SYM]
