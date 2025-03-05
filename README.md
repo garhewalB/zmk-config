@@ -4,5 +4,5 @@ ZMK Config for the Colubris keyboard (Hookah keymap not functional).
 
 *Generated with [keymap-drawer](https://github.com/caksoylar/keymap-drawer)*
  
-![](keymap-drawer/colubris.svg)
+
 
