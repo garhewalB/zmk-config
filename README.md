@@ -1,4 +1,4 @@
-ZMK Config for the Colubris keyboard.
+ZMK Config for the Colubris keyboard (Hookah keymap not functional).
 
 ## Keymap
 

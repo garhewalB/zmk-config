@@ -2785,3 +2785,235 @@ combos:
   k: ⌦
   l: [DEF]
   draw_separate: true
+layers:
+  DEF:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: Gui}
+  - {t: R, h: Alt}
+  - {t: S, h: Ctrl}
+  - {t: T, h: Shift}
+  - G
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
+  - X
+  - C
+  - {t: D, h: MSE}
+  - H
+  - ','
+  - .
+  - {t: Esc, h: NAV}
+  - {t: ␣, h: FUN}
+  - {t: ⏎, h: SYM}
+  - {t: ⌫, h: NUM}
+  NUM:
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: ;, h: Gui}
+  - {t: '4', h: Alt}
+  - {t: '5', h: Ctrl}
+  - {t: '6', h: Shift}
+  - '='
+  - M
+  - {t: N, h: Shift}
+  - {t: E, h: Ctrl}
+  - {t: I, h: Alt}
+  - {t: O, h: Gui}
+  - '1'
+  - '2'
+  - '3'
+  - H
+  - ','
+  - .
+  - '0'
+  - '-'
+  - ⏎
+  - {t: BKSP, type: held}
+  NAV:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Insert
+  - End
+  - Home
+  - ⌦
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ←
+  - ↓
+  - ↑
+  - →
+  - ⏮️
+  - {t: ▽, type: trans}
+  - Win Next
+  - {t: ▽, type: trans}
+  - Page Down
+  - Page Up
+  - ⏭️
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ␣
+  SYM:
+  - '{'
+  - '&'
+  - '*'
+  - (
+  - '}'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ':', h: Gui}
+  - {t: $, h: Alt}
+  - {t: '%', h: Ctrl}
+  - {t: ^, h: Shift}
+  - +
+  - '0'
+  - {t: '0', h: Shift}
+  - {t: '0', h: Ctrl}
+  - {t: '0', h: Alt}
+  - {t: '0', h: Gui}
+  - '!'
+  - '@'
+  - '#'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - )
+  - _
+  - {type: held}
+  - ''
+  FUN:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - Out USB
+  - Out BLE
+  - '&studio_unlock'
+  - ''
+  - ''
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - Desk Left
+  - Desk Right
+  - F11
+  - Caps Lock
+  - ''
+  - ''
+  - {t: Reset, h: Boot}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: Reset, h: Boot}
+  MSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Scroll ↓
+  - Mouse ↑
+  - Scroll ↑
+  - Scroll →
+  - Ctrl
+  - Gui
+  - Alt
+  - Shift
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Right Click
+  - Middle Click
+  - {t: Left Click, type: held}
+  - Back Click
+  - Middle Click
+  - Forward Click
+  - ''
+  - {t: ▽, type: trans}
+  - Left Click
+  - Right Click
+combos:
+- p: [20, 21]
+  k: Z
+  l: [DEF]
+- p: [21, 22]
+  k: V
+  l: [DEF]
+- p: [24, 23]
+  k: K
+  l: [DEF]
+- p: [24, 25]
+  k: /
+  l: [DEF]
+- p: [20, 21]
+  k: '`'
+  l: [NUM]
+- p: [21, 22]
+  k: \
+  l: [NUM]
+- p: [23, 24]
+  k: Insert
+  l: [NAV]
+- p: [24, 25]
+  k: End
+  l: [NAV]
+- p: [20, 21]
+  k: '~'
+  l: [SYM]
+- p: [21, 22]
+  k: '|'
+  l: [SYM]
+- p: [26, 27]
+  k: ↹
+  l: [DEF]
+  draw_separate: true
+- p: [26, 27]
+  k: .
+  l: [NUM]
+- p: [26, 27]
+  k: (
+  l: [SYM]
+- p: [29, 28]
+  k: ⌦
+  l: [DEF]
+  draw_separate: true
