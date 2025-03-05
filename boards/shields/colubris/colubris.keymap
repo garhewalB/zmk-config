@@ -34,6 +34,7 @@
 #define SWP_POS LB3
 
 #include "includes/combos.dtsi"
+#include "includes/miryoku_combos.dtsi"
 
 #ifdef EXTERNAL_POWER
 #    define FN_EXTRA1 &ext_power EP_ON
@@ -142,7 +143,7 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
             // hold-trigger-key-positions = <KEYS_R THUMBS>;
-            // hold-trigger-on-release;
+            hold-trigger-on-release;
         };
         aml: alpha_mods_l {
             compatible = "zmk,behavior-hold-tap";
