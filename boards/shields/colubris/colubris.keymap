@@ -33,7 +33,7 @@
 // Extra key bindings
 #define SWP_POS LB3
 
-#include "includes/combos.dtsi"
+// #include "includes/combos.dtsi"
 #include "includes/miryoku_combos.dtsi"
 
 #ifdef EXTERNAL_POWER
