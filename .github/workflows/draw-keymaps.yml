@@ -2,13 +2,13 @@
 name: Draw ZMK keymaps
 on:
   workflow_dispatch:  # can be triggered manually
-  push:               # automatically run on changes to following paths
-    paths:
-      - "config/*.keymap"
-      - "config/*.dtsi"
-      - "keymap_drawer/config.yaml"
-      - ".github/workflows/draw-keymaps.yml"
-      - "boards/*/*/*.keymap"
+  # push:               # automatically run on changes to following paths
+  #   paths:
+  #     - "config/*.keymap"
+  #     - "config/*.dtsi"
+  #     - "keymap_drawer/config.yaml"
+  #     - ".github/workflows/draw-keymaps.yml"
+  #     - "boards/*/*/*.keymap"
 
 jobs:
   draw:
