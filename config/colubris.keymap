@@ -1,0 +1,310 @@
+#include "keypos_def/keypos_30keys.h"
+
+#include <behaviors.dtsi>
+#include <behaviors/studio_unlock.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+// Layer aliases
+#define DEF 0
+#define NUM 1
+#define NAV 2
+#define SYM 3
+#define FUN 4
+#define MSE 5
+
+// Desktop and tab navigation shortcuts
+#define D_LT   LC(LG(LEFT))
+#define D_RT   LC(LG(RIGHT))
+#define TAB_RT LC(TAB)
+#define TAB_LT LC(LS(TAB))
+
+// HRM macro
+#define HRM(K00, K01, K02, K03, K04, K05, K06, K07, K08, K09) \
+&hrm LGUI K00  &hrm LALT K01  &hrm LCTRL K02 &hrm LSHFT K03 &kp K04 \
+&kp K05 &hrm RSHFT K06 &hrm RCTRL K07 &hrm RALT K08  &hrm RGUI K09 
+
+
+
+// Extra key bindings
+#define SWP_POS LB3
+
+#include "includes/combos.dtsi"
+// #include "includes/miryoku_combos.dtsi"
+
+#include "includes/mouse.dtsi"
+
+&mt {
+    flavor = "hold-preferred";
+    tapping-term-ms = <150>;
+};
+
+&lt {
+    flavor = "balanced";
+    tapping-term-ms = <150>;
+};
+
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>;
+};
+
+/ {
+    xy_transf: xy_transf {
+            compatible = "zmk,input-processor-transform";
+            #input-processor-cells = <1>;
+            type = <INPUT_EV_REL>;
+            x-codes = <INPUT_REL_X>, <INPUT_REL_WHEEL>;
+            y-codes = <INPUT_REL_Y>, <INPUT_REL_HWHEEL>;
+    };
+    xy_scaler: xy_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_X>, <INPUT_REL_Y>;
+            track-remainders;
+    };
+    x_scaler: x_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_X>;
+    };
+    to_wheel: to_wheel {
+            compatible = "zmk,input-processor-code-mapper";
+            #input-processor-cells = <0>;
+            type = <INPUT_EV_REL>;
+            map = <INPUT_REL_X INPUT_REL_HWHEEL>
+                , <INPUT_REL_Y INPUT_REL_WHEEL>;
+    };
+    
+    temp_layer: temp_layer{
+            compatible = "zmk,input-processor-temp-layer";
+            #input-processor-cells = <2>;
+    };
+
+    tpoint0_mmv_il {
+            compatible = "zmk,input-listener";
+            device = <&tpoint_split>;
+            status = "disabled";
+            input-processors = <&temp_layer MSE 500>;
+            precise {
+                    layers = <NAV>;
+                    process-next;
+                    input-processors = <&xy_scaler 2 3>;
+            };
+        //    scroll {
+        //            layers = <MSC>;
+        //            process-next;
+        //            input-processors = <&xy_scaler 1 22>, <&x_scaler 0 1>
+        //                                , <&to_wheel>;
+        //    };
+    };
+
+    behaviors {
+            m_v: mouse_move {
+                    compatible = "zmk,behavior-input-two-axis";
+                    #binding-cells = <1>;
+                    trigger-period-ms = <12>;
+                    x-input-code = <INPUT_REL_X>;
+                    y-input-code = <INPUT_REL_Y>;
+                    time-to-max-speed-ms = <300>;
+                    acceleration-exponent = <1>;
+            };
+    };
+
+    // mmv_input_listener {
+    //         compatible = "zmk,input-listener";
+    //         device = <&m_v>;
+    //         scroll {
+    //                 layers = <MSC>;
+    //                 input-processors = <&xy_transf (INPUT_TRANSFORM_Y_INVERT)>
+    //                                     , <&xy_scaler 1 75>, <&to_wheel>;
+    //         };
+    // };
+
+    behaviors {
+        hrm: home_row_mod {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            // hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
+        };
+        aml: alpha_mods_l {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
+            require-prior-idle-ms = <100>;
+        };
+        asl: alpha_shift_l {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>;
+            hold-trigger-on-release;
+        };
+        amr: alpha_mods_r {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
+            require-prior-idle-ms = <100>;
+        };
+        asr: alpha_shift_r {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>;
+            hold-trigger-on-release;
+        };
+
+        // Swapper for smart alt+tab
+        swapper: swapper {
+            compatible = "zmk,behavior-smart-toggle";
+            #binding-cells = <0>;
+            bindings = <&kp LALT>, <&kp TAB>;
+            ignored-key-positions = <SWP_POS RM1 RM2 RM3 RT2>;
+        };
+
+        rst_boot: rst_boot {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "tap-preferred";
+            bindings = <&bootloader>, <&sys_reset>;
+        };
+    };
+
+    // cond_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     // Define FUN layer as tri-state
+    //     func_tristate {
+    //         if-layers = <NAV SYM>;
+    //         then-layer = <FUN>;
+    //     };
+    // };
+
+    macros {
+        ZMK_MACRO(inv_qm,
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_press &kp LALT>
+                , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
+                , <&macro_release &kp LALT>;
+        )
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            display-name = "DEF";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp Q        &kp W          &kp F         &kp P         &kp B             &kp J           &kp L         &kp U        &kp Y        &kp SQT      
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     HRM(A,           R,             S,            T,            G,                M,              N,            E,           I,            O) 
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                   &kp X         &kp C        &lt MSE D                                        &kp H        &kp COMMA    &kp DOT                    
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                              &lt NAV ESC   &lt FUN SPACE          &lt SYM RET  &lt NUM BKSP                                          
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            >;
+        };
+
+        number_layer {
+            display-name = "NUM";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp LBKT      &kp N7        &kp N8        &kp N9        &kp RBKT          &kp J        &kp L        &kp U        &kp Y        &kp SQT      
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     HRM(SEMI,         N4,           N5,           N6,       EQUAL,            M,                 N,            E,           I,            O) 
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                   &kp N1        &kp N2        &kp N3                                         &kp H        &kp COMMA    &kp DOT                    
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &kp N0        &kp MINUS         &kp RET      &kp BKSP                                          
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            >;
+        };
+
+        nav_layer {
+            display-name = "NAV";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &trans         &trans       &trans      &trans     &trans                     &kp INS       &kp END       &kp HOME      &kp DEL       &none          
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &trans         &trans       &trans    &trans     &trans                       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp C_PREV         
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                    &trans       &swapper      &trans                                   &kp PG_DN     &kp PG_UP    &kp C_NEXT                    
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &none         &trans            &trans        &kp SPACE                                                
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            >;
+        };
+
+        symbol_layer {
+            display-name = "SYM";
+            bindings = <
+// ╭─────────────┬───────────────────┬─────────────────┬─────────────────┬─────────────╮   ╭─────────────┬─────────────┬───────────────┬─────────────┬─────────────╮
+     &kp LBRC      &kp AMPS            &kp STAR          &kp LPAR          &kp RBRC             &trans        &trans         &trans         &trans        &trans    
+// ├─────────────┼───────────────────┼─────────────────┼─────────────────┼─────────────┤   ├─────────────┼─────────────┼───────────────┼─────────────┼─────────────┤
+     HRM(COLON,      DLLR,             PRCNT,            CARET,             PLUS,             N0,         N0,            N0,             N0,            N0)      
+// ├─────────────┼───────────────────┼─────────────────┼─────────────────┼─────────────┤   ├─────────────┼─────────────┼───────────────┼─────────────┼─────────────┤
+                   &kp EXCL           &kp AT             &kp HASH                            &trans         &trans         &trans                     
+// ╰─────────────┴───────────────────┴─────────────────┼─────────────────┼─────────────┤   ├─────────────┼─────────────┼───────────────┴─────────────┴─────────────╯
+                                                              &kp RPAR      &kp UNDER            &trans        &none                                                 
+//                                           ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            >;
+        };
+
+        function_layer {
+            display-name = "FUN";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &out OUT_USB  &out OUT_BLE  &studio_unlock &none         &none        
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp F6        &kp F7        &kp F8        &kp F9        &kp F10           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                   &kp D_LT      &kp D_RT      &kp F11                                       &kp CAPS      &none         &none                    
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &rst_boot 0 0  &trans           &trans        &rst_boot 0 0                                           
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+           >;
+        };
+
+        mouse_layer {
+            display-name = "MSE";
+            bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &none         &none         &none         &none         &none           &msc SCRL_LEFT  &msc SCRL_DOWN  &mmv MOVE_UP  &msc SCRL_UP  &msc SCRL_RIGHT   
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &kp LCTRL     &kp LGUI      &kp LALT      &kp LSHFT     &none             &none         &none           &none         &none         &none          
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+                   &mkp RCLK     &mkp MCLK     &mkp LCLK                                     &mkp MB4        &mkp MCLK     &mkp MB5                          
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &none         &trans            &mkp LCLK     &mkp RCLK                                                    
+//                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
+            >;
+        };
+    };
+};
