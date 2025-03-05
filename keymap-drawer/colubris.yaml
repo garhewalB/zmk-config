@@ -62,29 +62,29 @@ layers:
   - ⏎
   - {t: BKSP, type: held}
   NAV:
-  - Win Close
-  - Tab Left
-  - Tab Right
-  - Tab Close
-  - Vol Up
+  - {t: ▽, type: trans}
+  - trans
+  - trans
+  - trans
+  - trans
   - Insert
   - End
   - Home
   - ⌦
   - ''
-  - Ctrl
-  - Gui
-  - Alt
-  - {t: ↹, h: Shift}
-  - Vol Down
+  - {t: ▽, type: trans}
+  - trans
+  - trans
+  - trans
+  - trans
   - ←
   - ↓
   - ↑
   - →
   - ⏮️
-  - Win Prev
+  - trans
   - Win Next
-  - Paste
+  - trans
   - Page Down
   - Page Up
   - ⏭️

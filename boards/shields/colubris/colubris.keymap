@@ -254,11 +254,11 @@
             display-name = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &kp LA(F4)    &kp TAB_LT    &kp TAB_RT    &kp LC(F4)    &kp C_VOL_UP      &kp INS       &kp END       &kp HOME      &kp DEL       &none          
+     &trans         &kp trans    &kp trans      &kp trans     &kp trans        &kp INS       &kp END       &kp HOME      &kp DEL       &none          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL     &kp LGUI      &kp LALT      &mt LSHFT TAB  &kp C_VOL_DN     &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp C_PREV         
+     &trans         &kp trans      &kp trans    &kp trans     &kp trans        &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp C_PREV         
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                   &kp LS(TAB)   &swapper      &kp LS(INS)                                   &kp PG_DN     &kp PG_UP    &kp C_NEXT                    
+                    &kp trans   &swapper      &kp trans                                   &kp PG_DN     &kp PG_UP    &kp C_NEXT                    
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &none         &trans            &trans        &kp SPACE                                                
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
