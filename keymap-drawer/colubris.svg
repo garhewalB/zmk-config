@@ -275,7 +275,7 @@ path.combo {
 </g>
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="224" y="218" width="28" height="26" class="combo"/>
-<text x="238" y="231" class="combo tap">ESC</text>
+<text x="238" y="231" class="combo tap">TAB</text>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="364" y="218" width="28" height="26" class="combo"/>
@@ -425,12 +425,6 @@ path.combo {
 <text x="168" y="147" class="combo tap">\</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="434" y="134" width="28" height="26" class="combo"/>
-</g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="490" y="134" width="28" height="26" class="combo"/>
-</g>
-<g class="combo combopos-4">
 <rect rx="6" ry="6" x="224" y="218" width="28" height="26" class="combo"/>
 <text x="238" y="231" class="combo tap">.</text>
 </g>
@@ -562,20 +556,14 @@ path.combo {
 <text x="0" y="0" class="key tap">SPACE</text>
 </g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="134" width="28" height="26" class="combo"/>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-</g>
-<g class="combo combopos-2">
 <rect rx="6" ry="6" x="434" y="134" width="28" height="26" class="combo"/>
 <text x="448" y="147" class="combo tap">INS</text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-1">
 <rect rx="6" ry="6" x="490" y="134" width="28" height="26" class="combo"/>
 <text x="504" y="147" class="combo tap">END</text>
 </g>
-<g class="combo combopos-4">
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="364" y="218" width="28" height="26" class="combo"/>
 <text x="378" y="231" class="combo tap">DEL</text>
 </g>
@@ -718,12 +706,6 @@ path.combo {
 <text x="168" y="147" class="combo tap">|</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="434" y="134" width="28" height="26" class="combo"/>
-</g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="490" y="134" width="28" height="26" class="combo"/>
-</g>
-<g class="combo combopos-4">
 <rect rx="6" ry="6" x="224" y="218" width="28" height="26" class="combo"/>
 <text x="238" y="231" class="combo tap">(</text>
 </g>
@@ -861,16 +843,6 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 <text x="0" y="0" class="key held tap"><tspan style="font-size: 70%">&amp;sys_reset</tspan></text>
 <text x="0" y="24" class="key held hold"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
-</g>
-<g class="combo combopos-0">
-<rect rx="6" ry="6" x="98" y="134" width="28" height="26" class="combo"/>
-<text x="112" y="147" class="combo tap">F10</text>
-</g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="154" y="134" width="28" height="26" class="combo"/>
-<text x="168" y="147" class="combo tap">
-<tspan x="168" dy="-0.6em">PAUSE</tspan><tspan x="168" dy="1.2em">BREAK</tspan>
-</text>
 </g>
 </g>
 </g>

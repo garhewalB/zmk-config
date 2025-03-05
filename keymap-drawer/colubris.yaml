@@ -233,3 +233,469 @@ combos:
   k: ⌦
   l: [NAV]
   draw_separate: true
+layers:
+  DEF:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: LGUI}
+  - {t: R, h: LALT}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHFT}
+  - G
+  - M
+  - {t: N, h: RSHFT}
+  - {t: E, h: RCTRL}
+  - {t: I, h: RALT}
+  - {t: O, h: RGUI}
+  - X
+  - C
+  - {t: D, h: MSE}
+  - H
+  - ','
+  - .
+  - {t: ESC, h: NAV}
+  - '&lt SPACE'
+  - {t: RET, h: SYM}
+  - {t: BKSP, h: NUM}
+  NUM:
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: ;, h: LGUI}
+  - {t: '4', h: LALT}
+  - {t: '5', h: LCTRL}
+  - {t: '6', h: LSHFT}
+  - '='
+  - M
+  - {t: N, h: RSHFT}
+  - {t: E, h: RCTRL}
+  - {t: I, h: RALT}
+  - {t: O, h: RGUI}
+  - '1'
+  - '2'
+  - '3'
+  - H
+  - ','
+  - .
+  - '0'
+  - '-'
+  - RET
+  - {t: BKSP, type: held}
+  NAV:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - INS
+  - END
+  - HOME
+  - DEL
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - PREV
+  - {t: ▽, type: trans}
+  - '&swapper'
+  - {t: ▽, type: trans}
+  - PG DN
+  - PG UP
+  - NEXT
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SPACE
+  SYM:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - ','
+  - +
+  - {t: '=', h: LALT}
+  - {t: _, h: LCTRL}
+  - {t: '-', h: LSHFT}
+  - ^
+  - '0'
+  - {t: '4', h: RSHFT}
+  - {t: '5', h: RCTRL}
+  - {t: '6', h: RALT}
+  - {t: ., h: RGUI}
+  - '~'
+  - '*'
+  - '&'
+  - '1'
+  - '2'
+  - '3'
+  - BSPC
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  FUN:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - OUT USB
+  - OUT BLE
+  - '&studio_unlock'
+  - ''
+  - ''
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - Ctl+Gui+ LEFT
+  - Ctl+Gui+ RIGHT
+  - F11
+  - CAPS
+  - ''
+  - ''
+  - {t: '&sys_reset', h: '&bootloader'}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: '&sys_reset', h: '&bootloader', type: held}
+  MSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - LCTRL
+  - LGUI
+  - LALT
+  - LSHFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  - {t: '&mkp LCLK', type: held}
+  - '&mkp MB4'
+  - '&mkp MCLK'
+  - '&mkp MB5'
+  - ''
+  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+combos:
+- p: [20, 21]
+  k: Z
+  l: [DEF]
+- p: [21, 22]
+  k: V
+  l: [DEF]
+- p: [24, 23]
+  k: K
+  l: [DEF]
+- p: [24, 25]
+  k: /
+  l: [DEF]
+- p: [20, 21]
+  k: '`'
+  l: [NUM]
+- p: [21, 22]
+  k: \
+  l: [NUM]
+- p: [23, 24]
+  k: INS
+  l: [NAV]
+- p: [24, 25]
+  k: END
+  l: [NAV]
+- p: [20, 21]
+  k: '~'
+  l: [SYM]
+- p: [21, 22]
+  k: '|'
+  l: [SYM]
+- p: [26, 27]
+  k: ESC
+  l: [DEF]
+- p: [26, 27]
+  k: .
+  l: [NUM]
+- p: [26, 27]
+  k: (
+  l: [SYM]
+- p: [29, 28]
+  k: {t: DEL, h: FUN}
+  l: [DEF]
+- p: [29, 28]
+  k: DEL
+  l: [NAV]
+layers:
+  DEF:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: A, h: LGUI}
+  - {t: R, h: LALT}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHFT}
+  - G
+  - M
+  - {t: N, h: RSHFT}
+  - {t: E, h: RCTRL}
+  - {t: I, h: RALT}
+  - {t: O, h: RGUI}
+  - X
+  - C
+  - {t: D, h: MSE}
+  - H
+  - ','
+  - .
+  - {t: ESC, h: NAV}
+  - '&lt SPACE'
+  - {t: RET, h: SYM}
+  - {t: BKSP, h: NUM}
+  NUM:
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {t: ;, h: LGUI}
+  - {t: '4', h: LALT}
+  - {t: '5', h: LCTRL}
+  - {t: '6', h: LSHFT}
+  - '='
+  - M
+  - {t: N, h: RSHFT}
+  - {t: E, h: RCTRL}
+  - {t: I, h: RALT}
+  - {t: O, h: RGUI}
+  - '1'
+  - '2'
+  - '3'
+  - H
+  - ','
+  - .
+  - '0'
+  - '-'
+  - RET
+  - {t: BKSP, type: held}
+  NAV:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - INS
+  - END
+  - HOME
+  - DEL
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - PREV
+  - {t: ▽, type: trans}
+  - '&swapper'
+  - {t: ▽, type: trans}
+  - PG DN
+  - PG UP
+  - NEXT
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SPACE
+  SYM:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - ','
+  - +
+  - {t: '=', h: LALT}
+  - {t: _, h: LCTRL}
+  - {t: '-', h: LSHFT}
+  - ^
+  - '0'
+  - {t: '4', h: RSHFT}
+  - {t: '5', h: RCTRL}
+  - {t: '6', h: RALT}
+  - {t: ., h: RGUI}
+  - '~'
+  - '*'
+  - '&'
+  - '1'
+  - '2'
+  - '3'
+  - BSPC
+  - {t: ▽, type: trans}
+  - {type: held}
+  - ''
+  FUN:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - OUT USB
+  - OUT BLE
+  - '&studio_unlock'
+  - ''
+  - ''
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - Ctl+Gui+ LEFT
+  - Ctl+Gui+ RIGHT
+  - F11
+  - CAPS
+  - ''
+  - ''
+  - {t: '&sys_reset', h: '&bootloader'}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: '&sys_reset', h: '&bootloader', type: held}
+  MSE:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - LCTRL
+  - LGUI
+  - LALT
+  - LSHFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mkp RCLK'
+  - '&mkp MCLK'
+  - {t: '&mkp LCLK', type: held}
+  - '&mkp MB4'
+  - '&mkp MCLK'
+  - '&mkp MB5'
+  - ''
+  - {t: ▽, type: trans}
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+combos:
+- p: [20, 21]
+  k: Z
+  l: [DEF]
+- p: [21, 22]
+  k: V
+  l: [DEF]
+- p: [24, 23]
+  k: K
+  l: [DEF]
+- p: [24, 25]
+  k: /
+  l: [DEF]
+- p: [20, 21]
+  k: '`'
+  l: [NUM]
+- p: [21, 22]
+  k: \
+  l: [NUM]
+- p: [23, 24]
+  k: INS
+  l: [NAV]
+- p: [24, 25]
+  k: END
+  l: [NAV]
+- p: [20, 21]
+  k: '~'
+  l: [SYM]
+- p: [21, 22]
+  k: '|'
+  l: [SYM]
+- p: [26, 27]
+  k: TAB
+  l: [DEF]
+- p: [26, 27]
+  k: .
+  l: [NUM]
+- p: [26, 27]
+  k: (
+  l: [SYM]
+- p: [29, 28]
+  k: {t: DEL, h: FUN}
+  l: [DEF]
+- p: [29, 28]
+  k: DEL
+  l: [NAV]
