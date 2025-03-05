@@ -30,8 +30,8 @@
 // Extra key bindings
 #define SWP_POS LB3
 
-// #include "includes/combos.dtsi"
-#include "includes/miryoku_combos.dtsi"
+#include "includes/combos.dtsi"
+// #include "includes/miryoku_combos.dtsi"
 
 #include "includes/mouse.dtsi"
 
@@ -194,14 +194,14 @@
         };
     };
 
-    cond_layers {
-        compatible = "zmk,conditional-layers";
-        // Define FUN layer as tri-state
-        func_tristate {
-            if-layers = <NAV SYM>;
-            then-layer = <FUN>;
-        };
-    };
+    // cond_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     // Define FUN layer as tri-state
+    //     func_tristate {
+    //         if-layers = <NAV SYM>;
+    //         then-layer = <FUN>;
+    //     };
+    // };
 
     macros {
         ZMK_MACRO(inv_qm,

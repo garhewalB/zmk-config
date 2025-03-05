@@ -20,39 +20,49 @@
     combos {
         compatible = "zmk,combos";
 
-COMBO(k,      &kp K,       LT2 LT1,     DEF,          80,  50)
-COMBO(semi,   &kp SEMI,    RT1 RT2,     DEF SYM,  40, 100)
-COMBO(grave,  &kp GRAVE,   RT2 RT3,     DEF,      40, 100)
-COMBO(lpar,   &kp LPAR,    LM2 LM1,     DEF,      40, 100)
-COMBO(rpar,   &kp RPAR,    RM1 RM2,     DEF,      40, 100)
-COMBO(lbkt,   &kp LBKT,    LM3 LM2,     DEF,      40, 100)
-COMBO(rbkt,   &kp RBKT,    RM2 RM3,     DEF,      40, 100)
-COMBO(tab,    &kp TAB,     LM3 LM1,     DEF SYM,  40, 150)
-COMBO(del,    &kp DEL,     RM1 RM3,     DEF SYM,  40, 150)
-COMBO(esc,    &kp ESC,     LM3 LM2 LM1, DEF SYM,  40,   0)
-COMBO(ret,    &kp RET,     RM1 RM2 RM3, DEF SYM,  40,   0)
-
-COMBO(capswd, &caps_word,  LM1 RM1,     DEF,      60, 200)
-
-COMBO(lock,   &kp LG(L),   LT1 LT0,     DEF,      80, 500)
-
-COMBO(play,   &kp C_PP,    LT0 LM0,     NAV,         200, 200)
-
+// Bottom Row Combos
 COMBO(z,      &kp Z,       LB3 LB2,     DEF,      80,  50)
 COMBO(v,      &kp V,       LB2 LB1,     DEF,      40,  50)
-COMBO(bslh,   &kp BSLH,    LB2 LB1,     NAV,      80, 100)
-COMBO(slsh,   &kp SLASH,   RB2 RB3,     DEF SYM,  80,  50)
+COMBO(k,      &kp K,       RB2 RB1,     DEF,      80,  50)
+COMBO(slsh,   &kp SLASH,   RB2 RB3,     DEF,      80,  50)
 
-COMBO(f12,    &kp F12,     LB3 LB2,     FUN,         100, 200)
-COMBO(btclr,  &bt BT_CLR,  RB2 RB3,     FUN,         100, 200)
+COMBO(grave,  &kp GRAVE,   LB3 LB2,     NUM,      40, 100)
+COMBO(bslh,   &kp BSLH,    LB2 LB1,     NUM,      80, 100)
 
-// COMBO(indbat, &ind_bat,    LT2 RT2,     FUN,         100, 200)
-// COMBO(indcon, &ind_con,    LT1 RT1,     FUN,         100, 200)
+COMBO(ins,    &kp INS,     RB1 RB2,     NAV,      80, 100)
+COMBO(end,    &kp END,     RB2 RB3,     NAV,      80, 100)
 
-COMBO(bootld, &bootloader, LT0 RT0,     FUN,         100, 500)
+COMBO(tilde,  &kp TILDE,   LB3 LB2,     SYM,      80, 100)
+COMBO(pipe,   &kp PIPE,    LB2 LB1,     SYM,      80, 100)
 
-#if defined(LH1)
-COMBO(mse_l,  &mo MSE,     LH1 LH0,     DEF,     150,   0, slow-release;)
-#endif
+// Thumb Combos
+COMBO(esc,    &kp ESC,     LH1 LH0,     DEF,      80, 100)
+COMBO(dot,    &kp DOT,     LH1 LH0,     NUM,      80, 100)
+COMBO(lpar,   &kp LPAR,    LH1 LH0,     SYM,      80, 100)
+
+COMBO(fundel, &lt FUN DEL, RH1 RH0,     DEF,      80, 100)
+COMBO(del,    &kp DEL,     RH1 RH0,     NAV,      80, 100)
+
+
+
+// COMBO(semi,   &kp SEMI,    RT1 RT2,     DEF SYM,  40, 100)
+// COMBO(lpar,   &kp LPAR,    LM2 LM1,     DEF,      40, 100)
+// COMBO(rpar,   &kp RPAR,    RM1 RM2,     DEF,      40, 100)
+// COMBO(lbkt,   &kp LBKT,    LM3 LM2,     DEF,      40, 100)
+// COMBO(rbkt,   &kp RBKT,    RM2 RM3,     DEF,      40, 100)
+// COMBO(tab,    &kp TAB,     LM3 LM1,     DEF SYM,  40, 150)
+// COMBO(del,    &kp DEL,     RM1 RM3,     DEF SYM,  40, 150)
+// COMBO(esc,    &kp ESC,     LM3 LM2 LM1, DEF SYM,  40,   0)
+// COMBO(ret,    &kp RET,     RM1 RM2 RM3, DEF SYM,  40,   0)
+
+// COMBO(capswd, &caps_word,  LM1 RM1,     DEF,      60, 200)
+
+// COMBO(lock,   &kp LG(L),   LT1 LT0,     DEF,      80, 500)
+
+// COMBO(play,   &kp C_PP,    LT0 LM0,     NAV,         200, 200)
+
+
+// COMBO(f12,    &kp F12,     LB3 LB2,     FUN,         100, 200)
+// COMBO(btclr,  &bt BT_CLR,  RB2 RB3,     FUN,         100, 200)
     };
 };
