@@ -63,28 +63,28 @@ layers:
   - {t: BKSP, type: held}
   NAV:
   - {t: ▽, type: trans}
-  - trans
-  - trans
-  - trans
-  - trans
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - Insert
   - End
   - Home
   - ⌦
   - ''
   - {t: ▽, type: trans}
-  - trans
-  - trans
-  - trans
-  - trans
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ←
   - ↓
   - ↑
   - →
   - ⏮️
-  - trans
+  - {t: ▽, type: trans}
   - Win Next
-  - trans
+  - {t: ▽, type: trans}
   - Page Down
   - Page Up
   - ⏭️
@@ -150,10 +150,10 @@ layers:
   - Caps Lock
   - ''
   - ''
-  - {t: Reset, h: Boot, type: held}
+  - {t: Reset, h: Boot}
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: Reset, h: Boot}
+  - {t: Reset, h: Boot, type: held}
   MSE:
   - ''
   - ''
@@ -185,3 +185,73 @@ layers:
   - {t: ▽, type: trans}
   - Left Click
   - Right Click
+combos:
+- p: [20, 21]
+  k: Z
+  l: [DEF]
+- p: [21, 22]
+  k: V
+  l: [DEF]
+- p: [23, 24]
+  k: K
+  l: [DEF]
+- p: [24, 25]
+  k: /
+  l: [DEF]
+- p: [20, 21]
+  k: ''
+  l: [NAV]
+- p: [21, 22]
+  k: ''
+  l: [NAV]
+- p: [23, 24]
+  k: Insert
+  l: [NAV]
+- p: [24, 25]
+  k: End
+  l: [NAV]
+- p: [20, 21]
+  k: '`'
+  l: [NUM]
+- p: [21, 22]
+  k: \
+  l: [NUM]
+- p: [23, 24]
+  k: ''
+  l: [NUM]
+- p: [24, 25]
+  k: ''
+  l: [NUM]
+- p: [20, 21]
+  k: '~'
+  l: [SYM]
+- p: [21, 22]
+  k: '|'
+  l: [SYM]
+- p: [23, 24]
+  k: ''
+  l: [SYM]
+- p: [24, 25]
+  k: ''
+  l: [SYM]
+- p: [20, 21]
+  k: F10
+  l: [FUN]
+- p: [21, 22]
+  k: Pause Break
+  l: [FUN]
+- p: [26, 27]
+  k: Esc
+  l: [DEF]
+- p: [26, 27]
+  k: .
+  l: [NUM]
+- p: [26, 27]
+  k: (
+  l: [SYM]
+- p: [29, 28]
+  k: {t: ⌦, h: FUN}
+  l: [DEF]
+- p: [29, 28]
+  k: ⌦
+  l: [NAV]

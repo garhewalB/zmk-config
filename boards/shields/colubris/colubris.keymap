@@ -31,7 +31,7 @@
 #define SWP_POS LB3
 
 // #include "includes/combos.dtsi"
-// #include "includes/miryoku_combos.dtsi"
+#include "includes/miryoku_combos.dtsi"
 
 #include "includes/mouse.dtsi"
 
@@ -251,11 +251,11 @@
             display-name = "NAV";
             bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &trans         &kp trans    &kp trans      &kp trans     &kp trans        &kp INS       &kp END       &kp HOME      &kp DEL       &none          
+     &trans         &trans       &trans      &trans     &trans                     &kp INS       &kp END       &kp HOME      &kp DEL       &none          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &trans         &kp trans      &kp trans    &kp trans     &kp trans        &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp C_PREV         
+     &trans         &trans       &trans    &trans     &trans                       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp C_PREV         
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                    &kp trans   &swapper      &kp trans                                   &kp PG_DN     &kp PG_UP    &kp C_NEXT                    
+                    &trans       &swapper      &trans                                   &kp PG_DN     &kp PG_UP    &kp C_NEXT                    
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                &none         &trans            &trans        &kp SPACE                                                
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
