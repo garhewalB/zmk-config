@@ -26,8 +26,8 @@ layers:
   - H
   - ','
   - .
-  - {t: Esc, h: Ctrl}
-  - {t: ␣, h: NAV}
+  - {t: Esc, h: NAV}
+  - '&lt SPACE'
   - {t: ⏎, h: SYM}
   - {t: BKSP, h: NUM}
   NUM:
@@ -59,8 +59,8 @@ layers:
   - .
   - '0'
   - '-'
-  - {t: ⏎, h: SYM}
-  - {t: BKSP, h: Shift, type: held}
+  - ⏎
+  - {t: BKSP, type: held}
   NAV:
   - Win Close
   - Tab Left
@@ -88,8 +88,8 @@ layers:
   - Page Down
   - Page Up
   - ⏭️
-  - ''
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ␣
   SYM:
@@ -186,80 +186,6 @@ layers:
   - Left Click
   - Right Click
 combos:
-- p: [2, 3]
-  k: K
-  l: [DEF]
-- p: [6, 7]
-  k: ;
-  l: [DEF, SYM]
-- p: [7, 8]
-  k: '`'
-  l: [DEF]
-- p: [12, 13]
-  k: (
-  l: [DEF]
-- p: [16, 17]
-  k: )
-  l: [DEF]
-- p: [11, 12]
-  k: '['
-  l: [DEF]
-- p: [17, 18]
-  k: ']'
-  l: [DEF]
-- p: [11, 13]
-  k: ↹
-  l: [DEF, SYM]
-  draw_separate: true
-- p: [16, 18]
-  k: ⌦
-  l: [DEF, SYM]
-  draw_separate: true
-- p: [11, 12, 13]
-  k: Esc
-  l: [DEF, SYM]
-  draw_separate: true
-- p: [16, 17, 18]
-  k: ⏎
-  l: [DEF, SYM]
-  draw_separate: true
-- p: [13, 16]
-  k: Caps Word
-  l: [DEF]
-  a: top
-- p: [3, 4]
-  k: Lock
-  l: [DEF]
-- p: [4, 14]
-  k: ⏯
-  l: [NAV]
-  a: right
-- p: [20, 21]
-  k: Z
-  l: [DEF]
-- p: [21, 22]
-  k: V
-  l: [DEF]
-- p: [21, 22]
-  k: \
-  l: [NAV]
-- p: [24, 25]
-  k: /
-  l: [DEF, SYM]
-- p: [20, 21]
-  k: F12
-  l: [FUN]
-  a: bottom
-- p: [24, 25]
-  k: BT CLR
-  l: [FUN]
-  a: bottom
-- p: [4, 5]
-  k: Boot
-  l: [FUN]
-- p: [26, 27]
-  k: MSE
-  l: [DEF]
 - p: [20, 21]
   k: Z
   l: [DEF]
