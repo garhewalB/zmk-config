@@ -202,17 +202,6 @@
     //     };
     // };
 
-    macros {
-        ZMK_MACRO(inv_qm,
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp KP_N1 &kp KP_N6 &kp KP_N8>
-                , <&macro_release &kp LALT>;
-        )
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -252,7 +241,7 @@
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &trans         &trans       &trans      &trans     &trans                     &kp INS       &kp END       &kp HOME      &kp DEL       &none          
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &trans         &trans       &trans    &trans     &trans                       &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp C_PREV         
+     &trans         &trans       &trans        &trans        &trans                &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp C_PREV         
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                     &trans       &swapper      &trans                                   &kp PG_DN     &kp PG_UP    &kp C_NEXT                    
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
