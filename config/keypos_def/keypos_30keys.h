@@ -35,21 +35,21 @@
 
 #pragma once
 
-#define LT0 3 // left-top row
-#define LT1 2
-#define LT2 1
 #define LT3 0
+#define LT2 1
+#define LT1 2
+#define LT0 3 // left-top row
 
 #define RT0 4 // right-top row
 #define RT1 5
 #define RT2 6
 #define RT3 7
 
-#define LM0 12 // left-middle row
-#define LM1 11
-#define LM2 10
-#define LM3 9
 #define LM4 8
+#define LM3 9
+#define LM2 10
+#define LM1 11
+#define LM0 12 // left-middle row
 
 #define RM0 13 // right-middle row
 #define RM1 14
@@ -57,18 +57,18 @@
 #define RM3 16
 #define RM4 17
 
-#define LB1 21 // left-bottom row
-#define LB2 20
-#define LB3 19
 #define LB4 18
+#define LB3 19
+#define LB2 20
+#define LB1 21 // left-bottom row
 
 #define RB1 22 // right-bottom row
 #define RB2 23
 #define RB3 24
 #define RB4 25
 
-#define LH0 27 // left thumb keys
 #define LH1 26
+#define LH0 27 // left thumb keys
 
 #define RH0 28 // right thumb keys
 #define RH1 29
