@@ -85,7 +85,7 @@
     tpoint0_mmv_il {
             compatible = "zmk,input-listener";
             device = <&tpoint_split>;
-            status = "disabled";
+            // status = "disabled";
             input-processors = <&temp_layer MSE 500>;
             precise {
                     layers = <NAV>;
