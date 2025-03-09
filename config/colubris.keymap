@@ -15,6 +15,32 @@
 &caps_word { continue-list = <UNDERSCORE MINUS BSPC DEL N1 N2 N3 N4 N5 N6 N7 N8 N9 N0>; };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        q {
+            bindings = <&kp Q>;
+            key-positions = <0 1>;
+            layers = <0>;
+        };
+
+        v {
+            bindings = <&kp V>;
+            key-positions = <20 21>;
+            layers = <0>;
+        };
+
+        quot {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <7 6>;
+        };
+
+        k {
+            bindings = <&kp K>;
+            key-positions = <22 23>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
