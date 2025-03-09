@@ -76,26 +76,26 @@ parse_config:
     C_AL_CALC: Calc
     C_PP: Play Pause
 
-    LCTRL: Ctrl
-    RCTRL: Ctrl
-    LALT: Alt
-    RALT: Alt
-    LGUI: Gui
-    RGUI: Gui
-    LSHFT: Shift
-    RSHFT: Shift
+    LCTRL: ⌃
+    RCTRL: ⌃
+    LALT: ⌥
+    RALT: ⌥
+    LGUI: ⌘
+    RGUI: ⌘
+    LSHFT: ⇧
+    RSHFT: ⇧
     ESC: Esc
     SPACE: ␣
     BSPC: ⌫
     RET: ⏎
-    TAB: ↹
+    TAB: ⇥
     DEL: ⌦
 
-    PG_UP: Page Up
-    PG_DN: Page Down
+    PG_UP: ⇞
+    PG_DN: ⇟
     INS: Insert
-    HOME: Home
-    END: End
+    HOME: ⤒
+    END: ⤓
     CAPS: Caps Lock
     PSCRN: Print Scrn
     PAUSE_BREAK: Pause Break
