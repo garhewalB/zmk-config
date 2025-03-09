@@ -46,7 +46,7 @@
 
         Default {
             bindings = <
-&kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp A  &kp R  &kp S  &kp T  &kp G  &kp H  &kp N  &kp E  &kp I  &kp O  &kp Z  &kp X  &kp C  &kp D  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC  &kp SPACE  &kp BSPC  &kp RET
+&kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &mt LGUI A  &mt LALT R  &mt LCTRL S  &mt LSHFT T  &kp G  &kp H  &mt RSHIFT N  &mt RCTRL E  &mt RALT I  &mt RGUI O  &kp Z  &kp X  &kp C  &kp D  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC  &kp SPACE  &kp BSPC  &kp RET
             >;
         };
     };
