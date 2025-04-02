@@ -193,14 +193,14 @@
         };
     };
 
-    // cond_layers {
-    //     compatible = "zmk,conditional-layers";
-    //     // Define FUN layer as tri-state
-    //     func_tristate {
-    //         if-layers = <NAV NUM>;
-    //         then-layer = <FUN>;
-    //     };
-    // };
+    cond_layers {
+        compatible = "zmk,conditional-layers";
+        // Define FUN layer as tri-state
+        func_tristate {
+            if-layers = <NAV NUM>;
+            then-layer = <FUN>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -213,7 +213,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      HRM(A,           R,             S,            T,            G,                M,              N,            E,           I,            O) 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp Z        &kp X         &kp C          &lt FUN D                                        &lt SYM H        &kp COMMA    &kp DOT        &kp SLASH            
+     &kp Z        &kp X         &kp C          &kp D                                        &lt SYM H        &kp COMMA    &kp DOT        &kp SLASH            
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                               &none        &lt NAV SPACE      &lt NUM BSPC  &none
 //                             ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────╯
