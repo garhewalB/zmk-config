@@ -30,12 +30,14 @@ COMBO(lbrc,   &kp LBRC,    LT3 LT2,     SYM,      80, 100)
 
 
 // Bottom Row Combos
-// COMBO(z,      &kp Z,       LB3 LB2,     DEF,      80,  50)
+COMBO(z,      &kp Z,       LB3 LB2,     DEF,      80,  50)
 COMBO(v,      &kp V,       LB2 LB1,     DEF,      40,  50)
 COMBO(k,      &kp K,       RB2 RB1,     DEF,      80,  50)
-// COMBO(slsh,   &kp SLASH,   RB2 RB3,     DEF,      80,  50)
+COMBO(slsh,   &kp SLASH,   RB2 RB3,     DEF,      80,  50)
+COMBO(f12,    &kp F12,     LB3 LB2,     FUN,         100, 200)
+COMBO(btclr,  &bt BT_CLR,  RB2 RB3,     FUN,         100, 200)
 
-// COMBO(grave,  &kp GRAVE,   LB3 LB2,     NUM,      40, 100)
+COMBO(grave,  &kp GRAVE,   LB3 LB2,     NUM,      40, 100)
 COMBO(bslh,   &kp BSLH,    LB2 LB1,     NUM,      80, 100)
 
 COMBO(ins,    &kp INS,     RB1 RB2,     NAV,      80, 100)
@@ -70,7 +72,5 @@ COMBO(pipe,   &kp PIPE,    LB2 LB1,     SYM,      80, 100)
 // COMBO(play,   &kp C_PP,    LT0 LM0,     NAV,         200, 200)
 
 
-// COMBO(f12,    &kp F12,     LB3 LB2,     FUN,         100, 200)
-// COMBO(btclr,  &bt BT_CLR,  RB2 RB3,     FUN,         100, 200)
     };
 };

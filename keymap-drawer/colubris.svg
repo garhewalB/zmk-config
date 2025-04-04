@@ -271,12 +271,20 @@ path.combo { stroke: #7f7f7f; }
 <text x="504" y="28" class="combo tap">&#x27;</text>
 </g>
 <g class="combo combopos-2">
+<rect rx="6" ry="6" x="98" y="127" width="28" height="26" class="combo"/>
+<text x="112" y="140" class="combo tap">Z</text>
+</g>
+<g class="combo combopos-3">
 <rect rx="6" ry="6" x="154" y="127" width="28" height="26" class="combo"/>
 <text x="168" y="140" class="combo tap">V</text>
 </g>
-<g class="combo combopos-3">
+<g class="combo combopos-4">
 <rect rx="6" ry="6" x="434" y="127" width="28" height="26" class="combo"/>
 <text x="448" y="140" class="combo tap">K</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="490" y="127" width="28" height="26" class="combo"/>
+<text x="504" y="140" class="combo tap">/</text>
 </g>
 </g>
 </g>
@@ -413,6 +421,10 @@ path.combo { stroke: #7f7f7f; }
 <text x="112" y="28" class="combo tap">[</text>
 </g>
 <g class="combo combopos-1">
+<rect rx="6" ry="6" x="98" y="127" width="28" height="26" class="combo"/>
+<text x="112" y="140" class="combo tap">`</text>
+</g>
+<g class="combo combopos-2">
 <rect rx="6" ry="6" x="154" y="127" width="28" height="26" class="combo"/>
 <text x="168" y="140" class="combo tap">\</text>
 </g>
@@ -825,6 +837,20 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Reset</text>
 <text x="0" y="24" class="key hold">Boot</text>
+</g>
+<g class="combo combopos-0">
+<path d="M112,169 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
+<path d="M112,169 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<rect rx="6" ry="6" x="98" y="156" width="28" height="26" class="combo"/>
+<text x="112" y="169" class="combo tap">F12</text>
+</g>
+<g class="combo combopos-1">
+<path d="M504,169 h-22 a6.0,6.0 0 0 1 -6.0,-6.0 v-4" class="combo"/>
+<path d="M504,169 h22 a6.0,6.0 0 0 0 6.0,-6.0 v-4" class="combo"/>
+<rect rx="6" ry="6" x="490" y="156" width="28" height="26" class="combo"/>
+<text x="504" y="169" class="combo tap">
+<tspan x="504" dy="-0.6em">BT</tspan><tspan x="504" dy="1.2em">CLR</tspan>
+</text>
 </g>
 </g>
 </g>
