@@ -286,6 +286,14 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="490" y="127" width="28" height="26" class="combo"/>
 <text x="504" y="140" class="combo tap">/</text>
 </g>
+<g class="combo combopos-6">
+<path d="M308,55 h-106 a6.0,6.0 0 0 0 -6.0,6.0 v4" class="combo"/>
+<path d="M308,55 h106 a6.0,6.0 0 0 1 6.0,6.0 v4" class="combo"/>
+<rect rx="6" ry="6" x="294" y="42" width="28" height="26" class="combo"/>
+<text x="308" y="55" class="combo tap">
+<tspan x="308" dy="-0.6em">Caps</tspan><tspan x="308" dy="1.2em">Word</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 308)" class="layer-NUM">

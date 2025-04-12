@@ -46,6 +46,10 @@ COMBO(end,    &kp END,     RB2 RB3,     NAV,      80, 100)
 COMBO(tilde,  &kp TILDE,   LB3 LB2,     SYM,      80, 100)
 COMBO(pipe,   &kp PIPE,    LB2 LB1,     SYM,      80, 100)
 
+// MISC 
+COMBO(capswd, &caps_word,  LM1 RM1,     DEF,      60, 200)
+
+
 // Thumb Combos
 // COMBO(tab,    &kp TAB,     LH1 LH0,     DEF,      80, 100)
 // COMBO(dot,    &kp DOT,     LH1 LH0,     NUM,      80, 100)
@@ -65,7 +69,6 @@ COMBO(pipe,   &kp PIPE,    LB2 LB1,     SYM,      80, 100)
 // COMBO(esc,    &kp ESC,     LM3 LM2 LM1, DEF SYM,  40,   0)
 // COMBO(ret,    &kp RET,     RM1 RM2 RM3, DEF SYM,  40,   0)
 
-// COMBO(capswd, &caps_word,  LM1 RM1,     DEF,      60, 200)
 
 // COMBO(lock,   &kp LG(L),   LT1 LT0,     DEF,      80, 500)
 
