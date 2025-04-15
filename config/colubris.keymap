@@ -85,7 +85,7 @@
             compatible = "zmk,input-listener";
             device = <&tpoint_split>;
             // status = "disabled";
-            input-processors = <&temp_layer MSE 500>;
+            input-processors = <&temp_layer DEF 500>;
             precise {
                     layers = <NAV>;
                     process-next;
