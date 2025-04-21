@@ -21,14 +21,14 @@
         compatible = "zmk,combos";
         
 // Vertical Combos 
-COMBO(lbrc,   &kp LBRC,    LM3 LT3,     DEF NUM SYM,      40, 100)
-COMBO(rbrc,   &kp RBRC,    RM3 RT3,     DEF NUM SYM,      40, 100)
+COMBO(lbrc,   &kp LBRC,    LM3 LT3,     DEF NUM,      40, 100)
+COMBO(rbrc,   &kp RBRC,    RM3 RT3,     DEF NUM,      40, 100)
 
-COMBO(lbkt,   &kp LBKT,    LM2 LT2,     DEF NUM SYM,      40, 100)
-COMBO(rbkt,   &kp RBKT,    RM2 RT2,     DEF NUM SYM,      40, 100)
+COMBO(lbkt,   &kp LBKT,    LM2 LT2,     DEF NUM,      40, 100)
+COMBO(rbkt,   &kp RBKT,    RM2 RT2,     DEF NUM,      40, 100)
 
-COMBO(lpar,   &kp LPAR,    LM1 LT1,     DEF NUM SYM,      40, 100)
-COMBO(rpar,   &kp RPAR,    RM1 RT1,     DEF NUM SYM,      40, 100)
+COMBO(lpar,   &kp LPAR,    LM1 LT1,     DEF NUM,      40, 100)
+COMBO(rpar,   &kp RPAR,    RM1 RT1,     DEF NUM,      40, 100)
 
 
 // Top Row Combos

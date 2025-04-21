@@ -157,22 +157,22 @@ layers:
 combos:
 - p: [9, 0]
   k: '{'
-  l: [DEF, NUM, SYM]
+  l: [DEF, NUM]
 - p: [16, 7]
   k: '}'
-  l: [DEF, NUM, SYM]
+  l: [DEF, NUM]
 - p: [10, 1]
   k: '['
-  l: [DEF, NUM, SYM]
+  l: [DEF, NUM]
 - p: [15, 6]
   k: ']'
-  l: [DEF, NUM, SYM]
+  l: [DEF, NUM]
 - p: [11, 2]
   k: (
-  l: [DEF, NUM, SYM]
+  l: [DEF, NUM]
 - p: [14, 5]
   k: )
-  l: [DEF, NUM, SYM]
+  l: [DEF, NUM]
 - p: [0, 1]
   k: Q
   l: [DEF]
