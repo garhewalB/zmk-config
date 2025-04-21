@@ -19,6 +19,17 @@
 / {
     combos {
         compatible = "zmk,combos";
+        
+// Vertical Combos 
+COMBO(lbrc,   &kp LBRC,    LM3 LT3,     DEF NUM SYM,      40, 100)
+COMBO(rbrc,   &kp RBRC,    RM3 RT3,     DEF NUM SYM,      40, 100)
+
+COMBO(lbkt,   &kp LBKT,    LM2 LT2,     DEF NUM SYM,      40, 100)
+COMBO(rbkt,   &kp RBKT,    RM2 RT2,     DEF NUM SYM,      40, 100)
+
+COMBO(lpar,   &kp LPAR,    LM1 LT1,     DEF NUM SYM,      40, 100)
+COMBO(rpar,   &kp RPAR,    RM1 RT1,     DEF NUM SYM,      40, 100)
+
 
 // Top Row Combos
 COMBO(q,      &kp Q,       LT3 LT2,     DEF,      80,  50)
@@ -60,10 +71,6 @@ COMBO(capswd, &caps_word,  LM1 RM1,     DEF,      60, 200)
 
 
 // COMBO(semi,   &kp SEMI,    RT1 RT2,     DEF SYM,  40, 100)
-// COMBO(lpar,   &kp LPAR,    LM2 LM1,     DEF,      40, 100)
-// COMBO(rpar,   &kp RPAR,    RM1 RM2,     DEF,      40, 100)
-// COMBO(lbkt,   &kp LBKT,    LM3 LM2,     DEF,      40, 100)
-// COMBO(rbkt,   &kp RBKT,    RM2 RM3,     DEF,      40, 100)
 // COMBO(tab,    &kp TAB,     LM3 LM1,     DEF SYM,  40, 150)
 // COMBO(del,    &kp DEL,     RM1 RM3,     DEF SYM,  40, 150)
 // COMBO(esc,    &kp ESC,     LM3 LM2 LM1, DEF SYM,  40,   0)
