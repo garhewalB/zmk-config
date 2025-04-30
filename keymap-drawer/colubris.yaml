@@ -58,7 +58,7 @@ layers:
   - .
   - /
   - ''
-  - '-'
+  - {t: '-', h: FUN}
   - {type: held}
   - ''
   NAV:
@@ -90,7 +90,7 @@ layers:
   - ''
   - ''
   - {type: held}
-  - ''
+  - {t: ␣, h: FUN}
   - {t: ▽, type: trans}
   SYM:
   - '&'

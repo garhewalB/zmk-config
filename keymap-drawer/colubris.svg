@@ -441,7 +441,9 @@ path.combo { stroke: #7f7f7f; }
 <g transform="translate(252, 224)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">-</text>
-</g>
+<a href="#FUN">
+<text x="0" y="24" class="key hold layer-activator">FUN</text>
+</a></g>
 <g transform="translate(364, 224)" class="key held keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
@@ -598,7 +600,10 @@ path.combo { stroke: #7f7f7f; }
 </g>
 <g transform="translate(364, 224)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-</g>
+<text x="0" y="0" class="key tap">␣</text>
+<a href="#FUN">
+<text x="0" y="24" class="key hold layer-activator">FUN</text>
+</a></g>
 <g transform="translate(420, 210)" class="key trans keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
