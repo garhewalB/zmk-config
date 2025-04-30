@@ -13,16 +13,16 @@ layers:
   - ''
   - ''
   - Q
-  - {t: A, h: Gui}
-  - {t: R, h: Alt}
-  - {t: S, h: Ctrl}
-  - {t: T, h: Shift}
+  - {t: A, h: ⌘}
+  - {t: R, h: ⌥}
+  - {t: S, h: ⌃}
+  - {t: T, h: ⇧}
   - G
   - M
-  - {t: N, h: Shift}
-  - {t: E, h: Ctrl}
-  - {t: I, h: Alt}
-  - {t: O, h: Gui}
+  - {t: N, h: ⇧}
+  - {t: E, h: ⌃}
+  - {t: I, h: ⌥}
+  - {t: O, h: ⌘}
   - ''''
   - ''
   - Z
@@ -31,17 +31,17 @@ layers:
   - D
   - V
   - K
-  - H
+  - {t: H, h: Sym}
   - ','
   - .
   - /
   - ''
   - ''
   - ''
-  - {t: Esc, h: Nav}
-  - {t: ␣, h: Mou Key}
-  - {t: ⏎, h: Sym}
-  - {t: BKSP, h: Num}
+  - {t: ␣, h: Nav}
+  - ''
+  - ''
+  - {t: ⌫, h: Num}
   - ''
   - ''
   Num:
@@ -64,7 +64,7 @@ layers:
   - '6'
   - '='
   - ''
-  - ↹
+  - ⇥
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Esc
@@ -76,8 +76,8 @@ layers:
   - '3'
   - \
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ⏎
+  - ⌦
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -89,6 +89,51 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Nav:
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ←
+  - ↓
+  - ↑
+  - →
+  - CAPSLOCK
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Esc
+  - ⇥
+  - {t: ▽, type: trans}
+  - ⤒
+  - ⇟
+  - ⇞
+  - ⤓
+  - Insert
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   Sym:
   - ''
   - ''
@@ -121,7 +166,7 @@ layers:
   - '#'
   - '|'
   - ''
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -130,64 +175,19 @@ layers:
   - {t: ▽, type: trans}
   - )
   - _
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Nav:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - ↑
-  - →
-  - CAPSLOCK
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - Home
-  - Page Down
-  - Page Up
-  - End
-  - Insert
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
   Mou Key:
   - ''
   - F1
   - F2
   - F3
-  - {t: F4, h: Mou Scroll}
+  - F4
   - F5
   - F6
-  - {t: F7, h: Mou Scroll}
+  - F7
   - F8
   - F9
   - F10
@@ -205,7 +205,7 @@ layers:
   - F11
   - F10
   - ''
-  - Mou Scroll
+  - ''
   - Right Click
   - Middle Click
   - Left Click
@@ -214,58 +214,80 @@ layers:
   - Left Click
   - Middle Click
   - Right Click
-  - Mou Scroll
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  Mou Scroll:
-  - ''
-  - ''
-  - BT 1
-  - BT 2
-  - {t: BT CLR, type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - A
-  - Boot
-  - ''
-  - ''
-  - Reset
   - ''
   - ''
   - ''
-  - '&studio_unlock'
-  - '&m_v (0)'
-  - '&m_v (0)'
-  - '&m_v (0)'
-  - '&m_v (0)'
-  - Reset
-  - Boot
-  - ''
-  - {t: ▽, type: trans}
-  - Right Click
-  - Middle Click
-  - Left Click
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Left Click
-  - Middle Click
-  - Right Click
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
+combos:
+- p: [14, 2]
+  k: '{'
+  l: [Default, Num]
+- p: [21, 9]
+  k: '}'
+  l: [Default, Num]
+- p: [15, 3]
+  k: '['
+  l: [Default, Num]
+- p: [20, 8]
+  k: ']'
+  l: [Default, Num]
+- p: [16, 4]
+  k: (
+  l: [Default, Num]
+- p: [19, 7]
+  k: )
+  l: [Default, Num]
+- p: [2, 3]
+  k: Q
+  l: [Default]
+- p: [9, 8]
+  k: ''''
+  l: [Default]
+- p: [26, 27]
+  k: Z
+  l: [Default]
+- p: [27, 28]
+  k: V
+  l: [Default]
+- p: [32, 31]
+  k: K
+  l: [Default]
+- p: [32, 33]
+  k: /
+  l: [Default]
+- p: [26, 27]
+  k: F12
+  l: [Mou Key]
+  a: bottom
+- p: [32, 33]
+  k: BT CLR
+  l: [Mou Key]
+  a: bottom
+- p: [26, 27]
+  k: '`'
+  l: [Num]
+- p: [27, 28]
+  k: \
+  l: [Num]
+- p: [31, 32]
+  k: Insert
+  l: [Nav]
+- p: [32, 33]
+  k: ⤓
+  l: [Nav]
+- p: [26, 27]
+  k: '~'
+  l: [Sym]
+- p: [27, 28]
+  k: '|'
+  l: [Sym]
+- p: [16, 19]
+  k: Caps Word
+  l: [Default]
+  a: top
