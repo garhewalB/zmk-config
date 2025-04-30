@@ -85,7 +85,7 @@
         tpoint0_mmv_il {
                 compatible = "zmk,input-listener";
                 device = <&tpoint_split>;
-                input-processors = <&xy_transf (INPUT_TRANSFORM_X_INVERT)>, <&temp_layer MSK 500>;
+                input-processors = <&xy_transf (INPUT_TRANSFORM_X_INVERT)>, <&temp_layer DEF 500>;
                 precise {
                         layers = <NUM>;
                         process-next;
