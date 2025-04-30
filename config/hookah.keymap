@@ -17,7 +17,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/input_transform.h>
-//#include <input/processors.dtsi>
 
 #define DEF 0
 #define NUM 1
@@ -85,15 +84,15 @@
                 input-processors = <&xy_transf (INPUT_TRANSFORM_X_INVERT)>, <&temp_layer MSK 500>;
                 precise {
                         layers = <NUM>;
-                        inherit;
+                        process-next;
                         input-processors = <&xy_scaler 2 3>;
                 };
-                scroll {
-                        layers = <MSC>;
-                        inherit;
-                        input-processors = <&xy_scaler 1 22>, <&x_scaler 0 1>
-                                         , <&to_wheel>;
-                };
+                // scroll {
+                //         layers = <MSC>;
+                //         inherit;
+                //         input-processors = <&xy_scaler 1 22>, <&x_scaler 0 1>
+                //                          , <&to_wheel>;
+                // };
         };
 
         behaviors {
@@ -105,17 +104,6 @@
                         y-input-code = <INPUT_REL_Y>;
                         time-to-max-speed-ms = <300>;
                         acceleration-exponent = <1>;
-                };
-        };
-
-        mmv_input_listener {
-                compatible = "zmk,input-listener";
-                device = <&m_v>;
-                scroll {
-                        layers = <MSC>;
-                        inherit;
-                        input-processors = <&xy_transf (INPUT_TRANSFORM_Y_INVERT)>
-                                         , <&xy_scaler 1 75>, <&to_wheel>;
                 };
         };
 
@@ -140,11 +128,6 @@
                         tapping-term-ms = <200>; quick-tap-ms = <200>;
                         flavor = "tap-preferred"; bindings = <&mo>, <&kp>;
                 };
-               // hmkp_tg: hold_mouse_key_press_tap_toggle {
-               //         compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>;
-               //         tapping-term-ms = <200>; quick-tap-ms = <200>;
-               //         flavor = "tap-preferred"; bindings = <&mkp>, <&tog>;
-               // };
         };
 
         tempo: key_tempo {
