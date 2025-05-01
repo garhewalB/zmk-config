@@ -221,3 +221,19 @@ combos:
   k: Caps Word
   l: [DEF]
   a: top
+- p: [9, 10, 11]
+  k: Esc
+  l: [DEF, SYM]
+  draw_separate: true
+- p: [14, 15, 16]
+  k: ⏎
+  l: [DEF, SYM]
+  draw_separate: true
+- p: [9, 11]
+  k: ⇥
+  l: [DEF, SYM]
+  draw_separate: true
+- p: [14, 16]
+  k: ⌦
+  l: [DEF, SYM]
+  draw_separate: true
