@@ -1,7 +1,7 @@
 if SHIELD_COLUBRIS_MINI_DONGLE || SHIELD_COLUBRIS_MINI_CENTRAL_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Colubris_Mini"
+    default "Colubris Mini"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
