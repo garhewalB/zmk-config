@@ -1,0 +1,16 @@
+file_format: "1"
+id: colubris_mini
+name: Colubris_Mini
+type: shield
+url: https://github.com/garhewalB/colubris/
+requires: [pro_micro]
+exposes: []
+features:
+  - keys
+  - pointer
+  - studio
+siblings:
+  - colubris_mini_central_dongle
+  - colubris_mini_central_left
+  - colubris_mini_peripheral_left
+  - colubris_mini_peripheral_right
