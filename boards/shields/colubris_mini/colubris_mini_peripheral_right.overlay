@@ -19,7 +19,7 @@
 
         // R4
         , <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 
         // Thumb
