@@ -6,16 +6,16 @@
     input-gpios
             // R2
         = <&pro_micro 18 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 
         // R3
-        , <&pro_micro 21 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> 
+        , <&pro_micro 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> 
         , <&pro_micro 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+        , <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
 
         // R4
         , <&pro_micro 20 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
