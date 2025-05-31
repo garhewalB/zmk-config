@@ -2,7 +2,7 @@
 
 / {
     chosen {
-        zmk,physical-layout = &colubris_mini_layout;
+        zmk,physical-layout = &colubris_layout;
         zephyr,display = &oled;
     };
 
