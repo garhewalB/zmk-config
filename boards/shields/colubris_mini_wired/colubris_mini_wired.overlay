@@ -1,33 +1,17 @@
 #include <dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
 
 
-/* Pinctrl groups */
 &pinctrl {
-    uart0_default: uart0_default {
-        groups = <&uart0_tx &uart0_rx>;
+  uart0_default: uart0_default {
+    group1 {
+      pinmux = <UART0_TX_P12>;        // TX on GPIO12
     };
-
-    uart0_tx: uart0_tx {
-        pinmux = <UART0_TX_P12>;
+    group2 {
+      pinmux = <UART0_RX_P13>;        // RX on GPIO13
+      input-enable;
     };
-
-    uart0_rx: uart0_rx {
-        pinmux = <UART0_RX_P13>;
-        input-enable;
-    };
+  };
 };
-
-// &pinctrl {
-//   uart0_default: uart0_default {
-//     group1 {
-//       pinmux = <UART0_TX_P12>;        // TX on GPIO12
-//     };
-//     group2 {
-//       pinmux = <UART0_RX_P13>;        // RX on GPIO13
-//       input-enable;
-//     };
-//   };
-// };
 
 &uart0 {
   status = "okay";
