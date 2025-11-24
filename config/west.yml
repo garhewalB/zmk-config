@@ -29,8 +29,8 @@ manifest:
     - name: zmk-smart-toggle
       remote: caksoylar
       revision: main
-    - name: wavshare_rp2040_zero
-      remote: zmk-component-rp2040-zero
+    - name: zmk-component-rp2040-zero
+      remote: nmunnich
       revision: main
 
   self:
