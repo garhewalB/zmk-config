@@ -1,0 +1,13 @@
+file_format: "1"
+id: colubris_mini_wired
+name: Colubris_Mini_Wired
+type: shield
+url: https://github.com/garhewalB/colubris/
+requires: [rp2040_zero]
+exposes: []
+features:
+  - keys
+  - studio
+siblings:
+  - colubris_mini_wired_central_left
+  - colubris_mini_wired_peripheral_right

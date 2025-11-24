@@ -1,0 +1,30 @@
+#include "colubris_mini_wired.dtsi"
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+&kscan0 {
+    input-gpios
+        // R2
+        = <&zero_d 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // SW4
+        , <&zero_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // SW7
+        , <&zero_d 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // SW10
+        , <&zero_d 27 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // SW12
+        // R3
+        , <&zero_d 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // SW1
+        , <&zero_d 5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // SW3
+        , <&zero_d 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // SW6
+        , <&zero_d 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // SW9
+        , <&zero_d 28 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // SW11
+        // R4
+        , <&zero_d 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // SW2
+        , <&zero_d 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)> // SW5
+        , <&zero_d 26 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // SW8
+        // Thumb
+        , <&zero_d 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // SW13
+        ;
+};
+
+&default_transform {
+    col-offset = <13>;
+};
+

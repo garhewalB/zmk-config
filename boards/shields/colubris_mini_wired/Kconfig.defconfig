@@ -1,0 +1,16 @@
+if SHIELD_COLUBRIS_MINI_WIRED_CENTRAL_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Colubris Mini Wired"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_COLUBRIS_MINI_WIRED_CENTRAL_LEFT || SHIELD_COLUBRIS_MINI_WIRED_PERIPHERAL_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

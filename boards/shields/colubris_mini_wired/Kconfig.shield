@@ -1,0 +1,9 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_COLUBRIS_MINI_WIRED_CENTRAL_LEFT
+	def_bool $(shields_list_contains,colubris_mini_wired_central_left)
+
+config SHIELD_COLUBRIS_MINI_WIRED_PERIPHERAL_RIGHT
+    def_bool $(shields_list_contains,colubris_mini_wired_peripheral_right)
+    

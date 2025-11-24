@@ -11,6 +11,8 @@ manifest:
       url-base: https://github.com/badjeff
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: nmunnich
+      url-base: https://github.com/nmunnich
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -26,6 +28,9 @@ manifest:
       revision: main
     - name: zmk-smart-toggle
       remote: caksoylar
+      revision: main
+    - name: wavshare_rp2040_zero
+      remote: zmk-component-rp2040-zero
       revision: main
 
   self:
