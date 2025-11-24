@@ -45,7 +45,7 @@ include:
   - board: rp2040_zero
     shield: colubris_mini_wired colubris_mini_wired_central_left
   - board: rp2040_zero
-    shield: colubris_mini_wired colubris_mini_wired_peripheral_left
+    shield: colubris_mini_wired colubris_mini_wired_peripheral_right
 
   
   # - board: nice_nano
