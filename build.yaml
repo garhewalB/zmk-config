@@ -18,29 +18,29 @@
 #
 ---
 include:
-  - board: nice_nano
-    shield: hookah_peripheral_left
-  - board: nice_nano
-    shield: hookah_peripheral_right
   # - board: nice_nano
-  #   shield: hookah_central_left
-  #   # snippet: zmk-usb-logging
+  #   shield: hookah_peripheral_left
+  # - board: nice_nano
+  #   shield: hookah_peripheral_right
+  # # - board: nice_nano
+  # #   shield: hookah_central_left
+  # #   # snippet: zmk-usb-logging
+  # #   snippet: studio-rpc-usb-uart
+  # - board: nice_nano_v2
+  #   shield: hookah_dongle dongle_display
+  # #   # snippet: zmk-usb-logging
   #   snippet: studio-rpc-usb-uart
-  - board: nice_nano_v2
-    shield: hookah_dongle dongle_display
-  #   # snippet: zmk-usb-logging
-    snippet: studio-rpc-usb-uart
     
-  - board: nice_nano
-    shield: colubris_mini_central_left
-    snippet: studio-rpc-usb-uart
-  - board: nice_nano
-    shield: colubris_mini_peripheral_left
-  - board: nice_nano
-    shield: colubris_mini_peripheral_right
-  - board: nice_nano_v2
-    shield: colubris_mini_dongle dongle_display
-    snippet: studio-rpc-usb-uart
+  # - board: nice_nano
+  #   shield: colubris_mini_central_left
+  #   snippet: studio-rpc-usb-uart
+  # - board: nice_nano
+  #   shield: colubris_mini_peripheral_left
+  # - board: nice_nano
+  #   shield: colubris_mini_peripheral_right
+  # - board: nice_nano_v2
+  #   shield: colubris_mini_dongle dongle_display
+  #   snippet: studio-rpc-usb-uart
 
   - board: rp2040_zero
     shield: colubris_mini_wired colubris_mini_wired_central_left
@@ -48,24 +48,24 @@ include:
     shield: colubris_mini_wired colubris_mini_wired_peripheral_left
 
   
-  - board: nice_nano
-    shield: colubris_peripheral_left
-  - board: nice_nano
-    shield: colubris_peripheral_right
-    # snippet: zmk-usb-logging
-  - board: nice_nano
-    shield: colubris_central_left
-    snippet: zmk-usb-logging
-    # snippet: studio-rpc-usb-uart
-  - board: nice_nano_v2
-    shield: colubris_dongle dongle_display
-    # snippet: zmk-usb-logging
-    snippet: studio-rpc-usb-uart
+  # - board: nice_nano
+  #   shield: colubris_peripheral_left
+  # - board: nice_nano
+  #   shield: colubris_peripheral_right
+  #   # snippet: zmk-usb-logging
+  # - board: nice_nano
+  #   shield: colubris_central_left
+  #   snippet: zmk-usb-logging
+  #   # snippet: studio-rpc-usb-uart
+  # - board: nice_nano_v2
+  #   shield: colubris_dongle dongle_display
+  #   # snippet: zmk-usb-logging
+  #   snippet: studio-rpc-usb-uart
 
   # Reset settings
   - board: rp2040_zero
     shield: settings_reset
-  - board: nice_nano_v2
-    shield: settings_reset
-  - board: nice_nano
-    shield: settings_reset
+  # - board: nice_nano_v2
+  #   shield: settings_reset
+  # - board: nice_nano
+  #   shield: settings_reset
