@@ -39,7 +39,7 @@
 
     wired_split {
         compatible = "zmk,wired-split";
-        device = <&uart0_default>;
+        device = <&uart0>;
     };
 
 };
