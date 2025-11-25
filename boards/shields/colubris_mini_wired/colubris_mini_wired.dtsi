@@ -6,6 +6,8 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "colubris_mini_wired-layout.dtsi"
+#include <dt-bindings/pinctrl/rpi-pico-rp2040-pinctrl.h>
+
 
 &colubris_layout{
         kscan = <&kscan0>;
@@ -35,11 +37,28 @@
         wakeup-source;
     };
 
+    &pinctrl {
+  uart0_default: uart0_default {
+    group1 {
+      pinmux = <UART0_TX_P12>;        // TX on GPIO12
+    };
+    group2 {
+      pinmux = <UART0_RX_P13>;        // RX on GPIO13
+      input-enable;
+    };
+  };
 };
 
-/ {
+&uart0 {
+  status = "okay";
+  pinctrl-0 = <&uart0_default>;
+  pinctrl-names = "default";
+};
+
+
     wired_split {
         compatible = "zmk,wired-split";
         device = <&uart0_default>;
     };
+
 };

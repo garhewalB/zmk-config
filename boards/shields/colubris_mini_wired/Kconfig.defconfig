@@ -10,10 +10,11 @@ endif
 
 if SHIELD_COLUBRIS_MINI_WIRED_CENTRAL_LEFT || SHIELD_COLUBRIS_MINI_WIRED_PERIPHERAL_RIGHT
 
+config ZMK_SPLIT
+    default y
+
 config ZMK_SPLIT_WIRED
     default y
 
-config ZMK_SPLIT
-    default y
 
 endif
